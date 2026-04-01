@@ -6,7 +6,7 @@ from datetime import datetime
 
 # --- CONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CSV_FILE = os.path.join(BASE_DIR, '23800+ Ultimate HR Outreach List - DataNiti.xlsx - 3300+ Verified HR Leads.csv')
+CSV_FILE = os.path.join(BASE_DIR, 'sentagain_contacts.csv)
 TEMPLATE_FILE = os.path.join(BASE_DIR, 'email_template.txt')
 SENT_FILE = os.path.join(BASE_DIR, 'sent_contacts.csv')
 PDF_ATTACHMENT = os.path.join(BASE_DIR, 'Khushi(4).pdf')
