@@ -2,10 +2,11 @@ name: Daily Email Automation
 
 on:
   schedule:
-    - cron: '0 3 * * 1-5'  # 8:30 AM IST (Mon-Fri)
-    - cron: '0 5 * * 1-5'  # 10:30 AM IST (Mon-Fri)
-    - cron: '0 7 * * 1-5'  # 12:30 PM IST (Mon-Fri)
-    - cron: '0 9 * * 1-5'  # 2:30 PM IST (Mon-Fri)
+    - cron: '0 3 * * 1-5'   # 8:30 AM IST (Mon-Fri) -> 50 mails
+    - cron: '0 5 * * 1-5'   # 10:30 AM IST (Mon-Fri) -> 50 mails
+    - cron: '0 7 * * 1-5'   # 12:30 PM IST (Mon-Fri) -> 50 mails
+    - cron: '0 9 * * 1-5'   # 2:30 PM IST (Mon-Fri) -> 50 mails
+    - cron: '30 11 * * 1-5' # 5:00 PM IST (Mon-Fri) -> 20 mails
   workflow_dispatch: 
 
 permissions:
@@ -26,10 +27,19 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Set Number of Emails based on Time
+        # Ye naya step check karega ki abhi kaunsa time hua hai
+        run: |
+          if [ "${{ github.event.schedule }}" == '30 11 * * 1-5' ]; then
+            echo "MAIL_COUNT=20" >> $GITHUB_ENV
+          else
+            echo "MAIL_COUNT=50" >> $GITHUB_ENV
+          fi
+
       - name: Run email script
         env:
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
-          NUM_EMAILS: 50
+          NUM_EMAILS: ${{ env.MAIL_COUNT }}
           DELAY_SECONDS: 12 
         run: python send_emails.py
 
@@ -38,6 +48,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add sent_contacts.csv email_log.txt
-          # Only commit if there are changes to avoid errors
           git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update sent contacts and logs"
           git push
