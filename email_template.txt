@@ -1,29 +1,26 @@
-Hi {name},
+Dear {name},
 
-I know your inbox is full, so I will keep this extremely brief. 
+I hope this email finds you well.
 
-I am Khushi Malik, a Lead AI Researcher and ML Engineer. I help companies build, optimize, and scale GenAI and Edge AI systems while drastically keeping cloud costs down. 
+I am writing to express my interest in exploring Full-time or Internship opportunities within the AI and Data team at {company}. I am an AI Researcher and ML Engineer, specializing in developing and optimizing Generative AI, RAG pipelines, and Edge AI systems.
 
-I am reaching out because I would love to bring this technical execution to the AI/Data team at {company}. Recently, I have:
+Throughout my recent roles and freelance projects, I have focused on building highly efficient, production-ready ML systems. A few key highlights of my work include:
 
-• Reduced LLM cloud infrastructure costs by 40% using PEFT (LoRA) fine-tuning.
-• Boosted RAG pipeline accuracy by 18% and reduced latency by 25% for enterprise queries.
-• Built a 100% offline Edge AI vision system for UNIDO AfricaRice that runs without lag on low-end mobile CPUs.
-• Ranked Top 120 globally (out of 100k+ Data Scientists) in a Zindi Machine Learning competition.
+• Optimizing RAG pipelines, which improved LLM accuracy by 18% and reduced latency by 25% for enterprise-scale queries.
+• Architecting cost-efficient LLM fine-tuning workflows using PEFT (LoRA), resulting in a 40% reduction in cloud infrastructure costs.
+• Developing a fully offline Edge AI vision system for UNIDO AfricaRice, optimized to run seamlessly on low-end mobile devices.
+• Securing a Global Rank of 120 (out of 100k+ Data Scientists) in a Zindi Machine Learning competition.
 
-I am actively looking for AI/ML/Data roles (Full-time or Intern). My resume is attached with deeper technical details on my stack (PyTorch, Hugging Face, AWS). 
+My technical expertise includes Python, PyTorch, Hugging Face, and scalable cloud deployments. I have attached my resume, which provides a comprehensive overview of my background and technical stack.
 
-If {company} is currently scaling its AI efforts or looking for hands-on engineers, I would love to connect. 
+I would greatly appreciate the opportunity to connect and discuss how my skills can contribute to the innovative work being done at {company}.
 
-Best regards,
+Thank you for your time and consideration.
 
-<b>Khushi Malik</b><br>
-+91-9536110472<br>
-khushimalik13569@gmail.com
-<br>
+Sincerely,
+
+Khushi Malik
+📞 +91-9536110472
 Portfolio: https://khushimalik3122.github.io/Khushi-portfolio-/
-<br>
-GitHub: https://github.com/khushimalik3122
-<br>
 LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/
-
+GitHub: https://github.com/khushimalik3122
