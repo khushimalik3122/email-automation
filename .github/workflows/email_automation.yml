@@ -2,6 +2,79 @@ name: Daily Email Automation
 
 on:
   schedule:
+    - cron: '0 3 * * *'  # 8:30 AM IST
+    - cron: '0 5 * * *'  # 10:30 AM IST
+    - cron: '0 7 * * *'  # 12:30 PM IST
+    - cron: '0 9 * * *'  # 2:30 PM IST
+  workflow_dispatch: # Manual trigger ke liye
+
+permissions:
+  contents: write
+
+jobs:
+  send-emails:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run email script
+        env:
+          APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
+          NUM_EMAILS: 50
+          # Maine yahan sabke liye 3 second ka standard delay rakha hai taaki errors na aayein
+          DELAY_SECONDS: 12 
+        run: python send_emails.py
+
+      - name: Save updated contacts and logs back to GitHub
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add sent_contacts.csv email_log.txt
+          # Only commit if there are changes to avoid errors
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update sent contacts and logs"
+          git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+name: Daily Email Automation
+
+on:
+  schedule:
     # This runs the script every day at 10:00 AM UTC (adjust as needed)
     - cron: '0 10 * * *'
   workflow_dispatch: # Allows you to trigger it manually from the GitHub website
