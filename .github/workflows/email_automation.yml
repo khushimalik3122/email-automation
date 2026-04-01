@@ -2,7 +2,7 @@ name: Daily Email Automation
 
 on:
   schedule:
-    # 1-5 ka matlab hai sirf Monday, Tuesday, Wednesday, Thursday aur Friday
+   
     - cron: '0 3 * * 1-5'  # 8:30 AM IST (Mon-Fri)
     - cron: '0 5 * * 1-5'  # 10:30 AM IST (Mon-Fri)
     - cron: '0 7 * * 1-5'  # 12:30 PM IST (Mon-Fri)
@@ -30,7 +30,7 @@ jobs:
         env:
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
           NUM_EMAILS: 50
-          # Maine yahan sabke liye 3 second ka standard delay rakha hai taaki errors na aayein
+          
           DELAY_SECONDS: 12 
         run: python send_emails.py
 
