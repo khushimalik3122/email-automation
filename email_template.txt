@@ -1,0 +1,41 @@
+Dear {name},<br><br>
+
+I’m <b>Khushi Malik</b>, an <b>AI Researcher</b> and <b>B.Sc. Mathematics undergraduate at Kirori Mal College, University of Delhi</b>, currently working at <b>Planto AI</b>. I specialize in building and optimizing <b>production-grade AI systems</b> with a strong focus on <b>LLMs</b>, <b>RAG pipelines</b>, and <b>applied Generative AI</b>.<br><br>
+
+Currently serving as a <b>Lead AI Researcher</b>, I lead a <b>5-member cross-functional engineering team</b>, driving end-to-end AI product development from research and experimentation to production deployment.<br><br>
+
+<b>Key contributions include:</b><br>
+
+• Spearheading the optimization of <b>Retrieval-Augmented Generation (RAG)</b> pipelines, achieving an <b>18% improvement in LLM accuracy</b> and a <b>25% reduction in latency</b> through advanced re-ranking and semantic chunking strategies<br>
+
+• Leading the development and launch of an <b>AI-powered VS Code extension</b> using <b>multi-agent workflows</b>, resulting in a <b>30% boost in developer productivity</b><br>
+
+• Engineering <b>cost-efficient fine-tuning workflows</b> using <b>Hugging Face Transformers and PEFT (LoRA)</b>, reducing cloud infrastructure costs by <b>40%</b><br>
+
+• Optimizing <b>LLM inference pipelines</b> via prompt compression and tokenization improvements, increasing response speed by <b>20%</b> and relevance by <b>15%</b><br>
+
+• Architecting <b>scalable end-to-end ML pipelines</b> capable of handling <b>10k+ daily queries</b> and enabling production rollout within <b>4 weeks</b><br>
+
+• Designing and deploying <b>enterprise-grade RAG systems</b> to streamline retrieval across complex organizational datasets<br>
+
+• Fine-tuning <b>StarCoder-2 (3B)</b> using <b>LoRA</b> for intelligent code generation and completion, achieving a final training loss of <b>1.20</b> on the CodeSearchNet dataset<br>
+
+• Achieving a <b>Top 10% rank</b> in a global Zindi competition by building a <b>time-series ML pipeline</b> with PatchTST embeddings and ensemble models for large-scale commodity data<br><br>
+
+<b>Tech stack:</b> Python, SQL, TypeScript, Node.js, FastAPI, React, PyTorch, Hugging Face Transformers, LLMs, RAG, PEFT/LoRA, AWS (EC2, S3, SageMaker), Docker, Git/GitLab, Weights & Biases, Pinecone, MongoDB.<br><br>
+
+I am actively seeking <b>AI Researcher / Machine Learning Engineer / Generative AI Engineer</b> <b>internship opportunities</b> and would be excited to contribute to <b>{company}</b>. I am open to both <b>remote</b> and <b>on-site roles</b>.<br><br>
+
+Please find my CV attached for reference. I would be grateful for the opportunity to discuss how my experience can contribute to your team.<br><br>
+
+Best regards,<br><br>
+
+<b>Khushi Malik</b><br>
+📞 +91-9536110472<br>
+📧 khushimalik13569@gmail.com
+<br>
+Portfolio: https://khushimalik3122.github.io/Khushi-portfolio-/
+<br>
+GitHub: https://github.com/khushimalik3122
+<br>
+LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/
