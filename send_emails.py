@@ -2,104 +2,190 @@ import pandas as pd
 import yagmail
 import time
 import os
+import random
 from datetime import datetime
 
 # --- CONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV_FILE = os.path.join(BASE_DIR, 'sentagain_contacts.csv')
-TEMPLATE_FILE = os.path.join(BASE_DIR, 'email_template.txt')
 SENT_FILE = os.path.join(BASE_DIR, 'sent_contacts.csv')
-PDF_ATTACHMENT = os.path.join(BASE_DIR, 'Khushi(4).pdf')
 LOG_FILE = os.path.join(BASE_DIR, 'email_log.txt')
 
-# Pull credentials securely
-YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'khushimalik511263@gmail.com')
+YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'your_email@gmail.com')
 YOUR_APP_PASSWORD = os.environ.get('APP_PASSWORD')
-NUM_TO_SEND = int(os.environ.get('NUM_EMAILS', 10))
-DELAY_SECONDS = int(os.environ.get('DELAY_SECONDS', 30))
 
+# Daily safe limit
+MAX_EMAILS = random.randint(40, 55)
+
+# --- SUBJECTS ---
+SUBJECTS = [
+    "Quick question about your team",
+    "Regarding opportunities at {company}",
+    "Loved your recent work at {company}",
+    "Interested in your AI/ML work",
+    "Exploring roles at {company}"
+]
+
+# --- TEMPLATES (CLEAN + UNIQUE) ---
+TEMPLATES = [
+"""Hi {name},
+
+I came across your work at {company} and really liked what your team is building.
+
+I’m working on GenAI + RAG systems and would love to connect or get your quick feedback.
+
+Best,  
+Khushi
+📞 +91-9536110472
+LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/
+""",
+
+"""Hi {name},
+
+Your work at {company} caught my attention.
+
+I’m building AI/ML systems focused on real-world deployment and would love to explore contributing.
+
+Best,  
+Khushi
+📞 +91-9536110472 
+LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/
+""",
+
+"""Hi {name},
+
+I was exploring {company} and found your work really interesting.
+
+I’d love to connect and learn more about your approach to AI/ML.
+
+Best,  
+Khushi
+📞 +91-9536110472
+LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/
+""",
+
+"""Hi {name},
+
+Quick question — how is your team approaching AI/ML at {company}?
+
+I’m working on similar systems and would really value your perspective.
+
+Best,  
+Khushi
+📞 +91-9536110472 
+LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/
+"""
+]
+
+# --- FUNCTIONS ---
+
+def smart_delay():
+    time.sleep(random.randint(60, 180))  # 1–3 min delay
+
+def take_break():
+    print("⏸ Taking a human-like break...")
+    time.sleep(random.randint(300, 900))  # 5–15 min
+
+def should_skip():
+    return random.random() < 0.15  # 15% skip
+
+def get_subject(company):
+    return random.choice(SUBJECTS).format(company=company)
+
+def get_template():
+    return random.choice(TEMPLATES)
+
+# --- LOAD CONTACTS ---
 def load_contacts():
-    if not os.path.exists(CSV_FILE):
-        raise FileNotFoundError(f"Could not find the file: {CSV_FILE}")
+    df = pd.read_csv(CSV_FILE)
+    df = df.dropna(subset=['Name', 'Email', 'Company'])
 
-    try:
-        if CSV_FILE.endswith('.xlsx'):
-            try:
-                df = pd.read_excel(CSV_FILE, engine='openpyxl')
-            except Exception:
-                df = pd.read_csv(CSV_FILE)
-        else:
-            df = pd.read_csv(CSV_FILE)
-    except Exception as e:
-        raise ValueError(f"Failed to read the file. Error: {e}")
-    
-    df = df.dropna(how='all')
-    required_columns = ['Name', 'Email', 'Company']
-    df = df.dropna(subset=required_columns)
-    
-    # Create empty sent file if it doesn't exist to prevent errors
     if not os.path.exists(SENT_FILE):
         pd.DataFrame(columns=['Name', 'Email', 'Company', 'Date']).to_csv(SENT_FILE, index=False)
-        
+
     sent = pd.read_csv(SENT_FILE)
     df = df[~df['Email'].isin(sent['Email'])]
-    
+
     return df
 
-def save_sent_contacts(sent_emails):
+# --- SAVE SENT ---
+def save_sent(sent_emails):
     sent = pd.read_csv(SENT_FILE)
     sent = pd.concat([sent, pd.DataFrame(sent_emails)], ignore_index=True)
     sent.drop_duplicates(subset=['Email'], inplace=True)
     sent.to_csv(SENT_FILE, index=False)
 
-def load_template():
-    if not os.path.exists(TEMPLATE_FILE):
-        return "Hi {name},\n\nI am applying for a role at {company}.\n\nBest,\nKhushi"
-    with open(TEMPLATE_FILE, 'r', encoding='utf-8') as f:
-        return f.read()
-
+# --- MAIN FUNCTION ---
 def send_emails():
     if not YOUR_APP_PASSWORD:
-        print("ERROR: App Password not found!")
+        print("❌ App password missing")
         return
 
     contacts = load_contacts()
     if contacts.empty:
-        print('No new contacts to email.')
+        print("No new contacts.")
         return
 
-    template = load_template()
     yag = yagmail.SMTP(YOUR_EMAIL, YOUR_APP_PASSWORD)
-    
-    if not os.path.exists(PDF_ATTACHMENT):
-        print(f"Error: CV file not found at {PDF_ATTACHMENT}")
-        return
+
+    # Shuffle contacts
+    contacts = contacts.sample(frac=1).reset_index(drop=True)
+
+    # Session-based sending (human-like)
+    session_limit = random.randint(12, 18)
+    contacts = contacts.head(session_limit)
 
     sent_emails = []
-    print(f"Found {len(contacts)} new contacts. Sending {min(NUM_TO_SEND, len(contacts))} emails...")
+    total_to_send = min(MAX_EMAILS, len(contacts))
 
-    for i, (index, row) in enumerate(contacts.head(NUM_TO_SEND).iterrows()):
-        name, email, company = row['Name'], row['Email'], row['Company']
-        if pd.isna(company): company = "your company"
+    print(f"🚀 Sending up to {total_to_send} emails in this session...")
 
+    for i, row in contacts.head(total_to_send).iterrows():
+
+        if should_skip():
+            continue
+
+        name = row['Name']
+        email = row['Email']
+        company = row['Company'] if pd.notna(row['Company']) else "your company"
+
+        subject = get_subject(company)
+        template = get_template()
         body = template.format(name=name, company=company)
-        subject = f'Application for AI/ML/Data Full time and Intern Roles at {company}'
 
         try:
-            yag.send(to=email, subject=subject, contents=body, attachments=PDF_ATTACHMENT)
-            print(f"[{i+1}/{NUM_TO_SEND}] Sent to {name} <{email}>")
-            sent_emails.append({'Name': name, 'Email': email, 'Company': company, 'Date': datetime.now()})
-        except Exception as e:
-            print(f"[{i+1}/{NUM_TO_SEND}] Failed to send to {name} <{email}>: {e}")
+            yag.send(to=email, subject=subject, contents=body)
+            print(f"[{i+1}] ✅ Sent to {name} <{email}>")
 
-        if i < min(NUM_TO_SEND, len(contacts)) - 1:
-            time.sleep(DELAY_SECONDS)
+            sent_emails.append({
+                'Name': name,
+                'Email': email,
+                'Company': company,
+                'Date': datetime.now()
+            })
+
+            with open(LOG_FILE, "a") as f:
+                f.write(f"{datetime.now()} | {name} | {email} | sent\n")
+
+        except Exception as e:
+            print(f"[{i+1}] ❌ Failed: {e}")
+
+        smart_delay()
+
+        # Random batch break
+        if i % random.randint(6, 10) == 0 and i != 0:
+            take_break()
+
+        # Random extra pause (human noise)
+        if random.random() < 0.05:
+            time.sleep(random.randint(120, 300))
 
     if sent_emails:
-        save_sent_contacts(sent_emails)
-        print("Updated sent_contacts.csv locally.")
+        save_sent(sent_emails)
+        print("📁 Sent contacts updated.")
 
-if __name__ == '__main__':
-    print(f"--- Starting Email Run at {datetime.now()} ---")
+# --- RUN ---
+if __name__ == "__main__":
+    print(f"--- Start: {datetime.now()} ---")
     send_emails()
-    print("--- Email Run Completed ---")
+    print(f"--- End: {datetime.now()} ---")
