@@ -141,13 +141,20 @@ def send_emails():
     contacts = contacts.sample(frac=1).reset_index(drop=True)
 
     # Session-based sending (human-like)
-
+  
 
     NUM_TO_SEND = int(os.environ.get('NUM_EMAILS', 15))
     contacts = contacts.head(NUM_TO_SEND)
 
-    sent_emails = []
-    total_to_send = min(MAX_EMAILS, len(contacts))
+    total_to_send = len(contacts)
+
+    for i, row in contacts.iterrows():
+        if should_skip():
+            continue
+            name = row['Name']
+            email = row['Email']
+            if "@" not in email:
+                continue
 
     print(f"🚀 Sending up to {total_to_send} emails in this session...")
 
