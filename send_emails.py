@@ -13,7 +13,7 @@ PDF_ATTACHMENT = os.path.join(BASE_DIR, 'Khushi(4).pdf')
 LOG_FILE = os.path.join(BASE_DIR, 'email_log.txt')
 
 # Pull credentials securely
-YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'khushimalik15566@gmail.com')
+YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'khushimalik511263@gmail.com')
 YOUR_APP_PASSWORD = os.environ.get('APP_PASSWORD')
 NUM_TO_SEND = int(os.environ.get('NUM_EMAILS', 10))
 DELAY_SECONDS = int(os.environ.get('DELAY_SECONDS', 30))
