@@ -1,57 +1,60 @@
-name: Smart Daily Email Automation
+name: Daily Email Automation (Smart Sessions)
 
 on:
   schedule:
-    - cron: '0 3 * * 1-5'   # 8:30 AM IST (Mon–Fri)
-  workflow_dispatch:
+    # 🌅 Morning Session (9:15 AM IST)
+    - cron: '45 3 * * 1-5'
 
-permissions:
-  contents: write
+    # ☀️ Afternoon Session (1:30 PM IST)
+    - cron: '0 8 * * 1-5'
+
+    # 🌆 Evening Session (6:00 PM IST)
+    - cron: '30 12 * * 1-5'
+
+  workflow_dispatch:
 
 jobs:
   send-emails:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Smart Email Automation
-        env:
-          APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
-        run: python send_emails.py
+      - name: ⚙️ Set session-specific limits
+        run: |
+          if [ "${{ github.event.schedule }}" == '45 3 * * 1-5' ]; then
+            echo "SESSION_NAME=Morning" >> $GITHUB_ENV
+            echo "NUM_EMAILS=15" >> $GITHUB_ENV
+          elif [ "${{ github.event.schedule }}" == '0 8 * * 1-5' ]; then
+            echo "SESSION_NAME=Afternoon" >> $GITHUB_ENV
+            echo "NUM_EMAILS=15" >> $GITHUB_ENV
+          else
+            echo "SESSION_NAME=Evening" >> $GITHUB_ENV
+            echo "NUM_EMAILS=12" >> $GITHUB_ENV
+          fi
 
-      - name: Save updated contacts and logs
+      - name: 🚀 Run Email Script
+        env:
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
+          NUM_EMAILS: ${{ env.NUM_EMAILS }}
+        run: |
+          echo "Running $SESSION_NAME session with $NUM_EMAILS emails..."
+          python send_emails.py
+
+      - name: 💾 Save updated logs & contacts
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add sent_contacts.csv email_log.txt
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update logs"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update logs ($SESSION_NAME session)"
           git push
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
