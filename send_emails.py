@@ -30,8 +30,8 @@ SUBJECTS = [
 TEMPLATES = [
     """Hi {name},\n\nI came across your work at {company} and genuinely liked what your team is building in the AI/ML space.\n\nI’m currently working on Generative AI and RAG-based systems, focusing on improving model performance.\n\nI’d really appreciate the opportunity to connect and explore if I could contribute.\n\nBest regards,\nKhushi Malik\nLinkedIn: https://www.linkedin.com/in/khushi-6b972b280/""",
     """Hi {name},\n\nYour work at {company} caught my attention while I was exploring teams working on impactful AI/ML solutions.\n\nI’m building systems around Generative AI and scalable ML pipelines. I would love to connect and get your valuable feedback on my work.\n\nBest regards,\nKhushi Malik\nLinkedIn: https://www.linkedin.com/in/khushi-6b972b280/""",
-    """Hi {name},\n\nI was recently exploring {company} and found your work particularly interesting.\n\nI’m currently working on AI/ML systems, especially in RAG pipelines, and I’m keen to understand how teams like yours approach scaling such solutions.\n\nBest,\nKhushi Malik""",
-    """Hi {name},\n\nI had a quick question regarding how your team at {company} is currently approaching AI/ML development.\n\nI’ve been working on similar systems involving Generative AI, and I’m always looking to learn from professionals building impactful solutions.\n\nBest regards,\nKhushi Malik"""
+    """Hi {name},\n\nI was recently exploring {company} and found your work particularly interesting.\n\nI’m currently working on AI/ML systems, especially in RAG pipelines, and I’m keen to understand how teams like yours approach scaling such solutions.\n\nBest,\nKhushi Malik\nLinkedIn: https://www.linkedin.com/in/khushi-6b972b280/""",
+    """Hi {name},\n\nI had a quick question regarding how your team at {company} is currently approaching AI/ML development.\n\nI’ve been working on similar systems involving Generative AI, and I’m always looking to learn from professionals building impactful solutions.\n\nBest regards,\nKhushi Malik\nLinkedIn: https://www.linkedin.com/in/khushi-6b972b280/"""
 ]
 
 def is_human_time():
