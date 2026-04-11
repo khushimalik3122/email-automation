@@ -28,51 +28,60 @@ SUBJECTS = [
 
 # --- TEMPLATES (CLEAN + UNIQUE) ---
 TEMPLATES = [
+
 """Hi {name},
 
-I came across your work at {company} and really liked what your team is building.
+I came across your work at {company} and genuinely liked what your team is building in the AI/ML space.
 
-I’m working on GenAI + RAG systems and would love to connect or get your quick feedback.
+I’m currently working on Generative AI and RAG-based systems, focusing on improving model performance and real-world deployment efficiency.
 
-Best,  
-Khushi
-📞 +91-9536110472
+I’d really appreciate the opportunity to connect, learn from your experience, and explore if I could contribute in any way.
+
+Best regards,  
+Khushi Malik  
+📞 +91-9536110472  
 LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/
 """,
 
 """Hi {name},
 
-Your work at {company} caught my attention.
+Your work at {company} caught my attention while I was exploring teams working on impactful AI/ML solutions.
 
-I’m building AI/ML systems focused on real-world deployment and would love to explore contributing.
+I’m building systems around Generative AI and scalable ML pipelines, with a strong focus on practical implementation and optimization.
 
-Best,  
-Khushi
-📞 +91-9536110472 
+I would love to connect with you and explore potential opportunities or even get your valuable feedback on my work.
+
+Best regards,  
+Khushi Malik  
+📞 +91-9536110472  
 LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/
 """,
 
 """Hi {name},
 
-I was exploring {company} and found your work really interesting.
+I was recently exploring {company} and found your work particularly interesting.
 
-I’d love to connect and learn more about your approach to AI/ML.
+I’m currently working on AI/ML systems, especially in Generative AI and RAG pipelines, and I’m keen to understand how teams like yours approach building and scaling such solutions.
 
-Best,  
-Khushi
-📞 +91-9536110472
+I’d really value the chance to connect and learn from your experience.
+
+Best regards,  
+Khushi Malik  
+📞 +91-9536110472  
 LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/
 """,
 
 """Hi {name},
 
-Quick question — how is your team approaching AI/ML at {company}?
+I had a quick question regarding how your team at {company} is currently approaching AI/ML development and deployment.
 
-I’m working on similar systems and would really value your perspective.
+I’ve been working on similar systems involving Generative AI and efficient model pipelines, and I’m always looking to learn from professionals building impactful solutions.
 
-Best,  
-Khushi
-📞 +91-9536110472 
+If you’re open to it, I’d really appreciate a brief conversation or your perspective.
+
+Best regards,  
+Khushi Malik  
+📞 +91-9536110472  
 LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/
 """
 ]
