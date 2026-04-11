@@ -11,7 +11,7 @@ CSV_FILE = os.path.join(BASE_DIR, 'sentagain_contacts.csv')
 SENT_FILE = os.path.join(BASE_DIR, 'sent_contacts.csv')
 LOG_FILE = os.path.join(BASE_DIR, 'email_log.txt')
 
-YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'your_email@gmail.com')
+YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'Khushimalik511263@gmail.com')
 YOUR_APP_PASSWORD = os.environ.get('APP_PASSWORD')
 
 # Daily safe limit
