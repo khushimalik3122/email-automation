@@ -14,10 +14,11 @@ LOG_FILE = os.path.join(BASE_DIR, 'email_log.txt')
 YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'Khushimalik511263@gmail.com')
 YOUR_APP_PASSWORD = os.environ.get('APP_PASSWORD')
 
-# Daily safe limit
-MAX_EMAILS = random.randint(40, 55)
+# --- HUMAN LOGIC SETTINGS ---
+WORK_START = 9  # 9 AM
+WORK_END = 19   # 7 PM
 
-# --- SUBJECTS ---
+# --- SUBJECTS & TEMPLATES ---
 SUBJECTS = [
     "Quick question about your team",
     "Regarding opportunities at {company}",
@@ -26,123 +27,89 @@ SUBJECTS = [
     "Exploring roles at {company}"
 ]
 
-# --- TEMPLATES ---
 TEMPLATES = [
-   
+    """Hi {name},\n\nI came across your work at {company} and genuinely liked what your team is building in the AI/ML space.\n\nI’m currently working on Generative AI and RAG-based systems, focusing on improving model performance.\n\nI’d really appreciate the opportunity to connect and explore if I could contribute.\n\nBest regards,\nKhushi Malik\nLinkedIn: https://www.linkedin.com/in/khushi-6b972b280/""",
+    """Hi {name},\n\nYour work at {company} caught my attention while I was exploring teams working on impactful AI/ML solutions.\n\nI’m building systems around Generative AI and scalable ML pipelines. I would love to connect and get your valuable feedback on my work.\n\nBest regards,\nKhushi Malik\nLinkedIn: https://www.linkedin.com/in/khushi-6b972b280/""",
+    """Hi {name},\n\nI was recently exploring {company} and found your work particularly interesting.\n\nI’m currently working on AI/ML systems, especially in RAG pipelines, and I’m keen to understand how teams like yours approach scaling such solutions.\n\nBest,\nKhushi Malik""",
+    """Hi {name},\n\nI had a quick question regarding how your team at {company} is currently approaching AI/ML development.\n\nI’ve been working on similar systems involving Generative AI, and I’m always looking to learn from professionals building impactful solutions.\n\nBest regards,\nKhushi Malik"""
 ]
 
-# --- FUNCTIONS ---
-def smart_delay():
-    time.sleep(random.randint(60, 180))
+def is_human_time():
+    now = datetime.now()
+    if not (WORK_START <= now.hour <= WORK_END):
+        print(f"🌙 Outside work hours ({now.hour}:00). Skipping.")
+        return False
+    if now.strftime('%A') in ['Saturday', 'Sunday']:
+        print("☀️ Weekend skip.")
+        return False
+    return True
 
-def take_break():
-    print("⏸ Taking a human-like break...")
-    time.sleep(random.randint(300, 900))
-
-def should_skip():
-    return random.random() < 0.15
-
-def get_subject(company):
-    return random.choice(SUBJECTS).format(company=company)
-
-def get_template():
-    return random.choice(TEMPLATES)
+def human_delay(long_break=False):
+    wait = random.randint(300, 800) if long_break else random.randint(45, 150)
+    print(f"⏳ Waiting {wait} seconds...")
+    time.sleep(wait)
 
 def load_contacts():
     if not os.path.exists(CSV_FILE):
-        print(f"❌ Error: {CSV_FILE} not found!")
         return pd.DataFrame()
-
-    df = pd.read_csv(CSV_FILE)
-    df = df.dropna(subset=['Name', 'Email', 'Company'])
-
-    if not os.path.exists(SENT_FILE):
-        pd.DataFrame(columns=['Name', 'Email', 'Company', 'Date']).to_csv(SENT_FILE, index=False)
-
-    sent = pd.read_csv(SENT_FILE)
-    df = df[~df['Email'].isin(sent['Email'])]
+    df = pd.read_csv(CSV_FILE).dropna(subset=['Email', 'Name'])
+    if os.path.exists(SENT_FILE):
+        sent = pd.read_csv(SENT_FILE)
+        df = df[~df['Email'].isin(sent['Email'])]
     return df
 
-def save_sent(sent_emails_list):
-    if not sent_emails_list:
-        return
-    sent = pd.read_csv(SENT_FILE)
-    new_sent = pd.DataFrame(sent_emails_list)
-    sent = pd.concat([sent, new_sent], ignore_index=True)
-    sent.drop_duplicates(subset=['Email'], inplace=True)
-    sent.to_csv(SENT_FILE, index=False)
-    print("📁 Sent contacts CSV updated successfully.")
+def save_sent(sent_list):
+    if not sent_list: return
+    new_df = pd.DataFrame(sent_list)
+    if os.path.exists(SENT_FILE):
+        old_df = pd.read_csv(SENT_FILE)
+        final_df = pd.concat([old_df, new_df], ignore_index=True)
+    else:
+        final_df = new_df
+    final_df.drop_duplicates(subset=['Email'], inplace=True)
+    final_df.to_csv(SENT_FILE, index=False)
 
-# --- MAIN FUNCTION ---
 def send_emails():
-    if not YOUR_APP_PASSWORD:
-        print("❌ App password missing")
+    if not is_human_time() or not YOUR_APP_PASSWORD:
         return
 
     contacts = load_contacts()
     if contacts.empty:
-        print("No new contacts to email.")
+        print("No new contacts.")
         return
 
+    # Session limit: 8 to 14 emails per run
+    session_batch = contacts.sample(frac=1).reset_index(drop=True).head(random.randint(8, 14))
     yag = yagmail.SMTP(YOUR_EMAIL, YOUR_APP_PASSWORD)
-    
-    # Shuffle and limit
-    contacts = contacts.sample(frac=1).reset_index(drop=True)
-    NUM_TO_SEND = int(os.environ.get('NUM_EMAILS', 15))
-    contacts = contacts.head(NUM_TO_SEND)
+    sent_emails = []
 
-    
-    sent_emails = [] 
-    
-    print(f"🚀 Sending up to {len(contacts)} emails in this session...")
-
-    for i, row in contacts.iterrows():
-        if should_skip():
-            print(f"⏭ Skipping {row['Name']} (Random human behavior)")
-            continue
-
-        name = row['Name']
-        email = row['Email']
-        company = row['Company'] if pd.notna(row['Company']) else "your company"
-
-        if "@" not in str(email):
-            continue
-
-        subject = get_subject(company)
-        template = get_template()
-        body = template.format(name=name, company=company)
-
+    for i, row in session_batch.iterrows():
         try:
-            yag.send(to=email, subject=subject, contents=body)
-            print(f"[{i+1}] ✅ Sent to {name} <{email}>")
-
+            name, email = row['Name'], row['Email']
+            company = row['Company'] if pd.notna(row['Company']) else "your team"
             
+            subject = random.choice(SUBJECTS).format(company=company)
+            body = random.choice(TEMPLATES).format(name=name, company=company)
+
+            yag.send(to=email, subject=subject, contents=body)
+            print(f"✅ [{i+1}] Sent to {name}")
+
             sent_emails.append({
-                'Name': name,
-                'Email': email,
-                'Company': company,
+                'Name': name, 'Email': email, 'Company': company, 
                 'Date': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             })
 
-            with open(LOG_FILE, "a") as f:
-                f.write(f"{datetime.now()} | {name} | {email} | sent\n")
+            if (i + 1) % random.randint(3, 5) == 0:
+                print("☕ Taking a coffee break...")
+                human_delay(long_break=True)
+            else:
+                human_delay(long_break=False)
 
         except Exception as e:
-            print(f"[{i+1}] ❌ Failed for {name}: {e}")
+            print(f"❌ Failed: {e}")
+            time.sleep(60)
 
-        # Delays
-        if i < len(contacts) - 1:
-            smart_delay()
-            if i % random.randint(6, 10) == 0 and i != 0:
-                take_break()
-
-   
-    if sent_emails:
-        save_sent(sent_emails)
-    else:
-        print("No emails were actually sent this session.")
+    save_sent(sent_emails)
 
 if __name__ == "__main__":
-    print(f"--- Start: {datetime.now()} ---")
     send_emails()
-    print(f"--- End: {datetime.now()} ---")
