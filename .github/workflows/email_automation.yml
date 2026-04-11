@@ -1,62 +1,43 @@
-name: Daily Email Automation (Smart Sessions)
+name: Humanized Email Automation
 
 on:
   schedule:
-    # 🌅 Morning Session (9:15 AM IST)
-    - cron: '45 3 * * 1-5'
-
-    # ☀️ Afternoon Session (1:30 PM IST)
-    - cron: '0 8 * * 1-5'
-
-    # 🌆 Evening Session (6:00 PM IST)
-    - cron: '30 12 * * 1-5'
-
-  workflow_dispatch:
+    - cron: '0 4,8,12 * * *' # 
+  workflow_dispatch: #
 
 jobs:
-  send-emails:
+  build:
     runs-on: ubuntu-latest
+    
+    # --- CRITICAL FIX FOR 403 ERROR ---
     permissions:
       contents: write
+    # ----------------------------------
 
     steps:
-      - name: 📥 Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: 🐍 Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.9'
 
-      - name: 📦 Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: ⚙️ Set session-specific limits
+      - name: Install dependencies
         run: |
-          if [ "${{ github.event.schedule }}" == '45 3 * * 1-5' ]; then
-            echo "SESSION_NAME=Morning" >> $GITHUB_ENV
-            echo "NUM_EMAILS=15" >> $GITHUB_ENV
-          elif [ "${{ github.event.schedule }}" == '0 8 * * 1-5' ]; then
-            echo "SESSION_NAME=Afternoon" >> $GITHUB_ENV
-            echo "NUM_EMAILS=15" >> $GITHUB_ENV
-          else
-            echo "SESSION_NAME=Evening" >> $GITHUB_ENV
-            echo "NUM_EMAILS=12" >> $GITHUB_ENV
-          fi
+          python -m pip install --upgrade pip
+          pip install pandas yagmail
 
-      - name: 🚀 Run Email Script
+      - name: Run script
         env:
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
-          NUM_EMAILS: ${{ env.NUM_EMAILS }}
-        run: |
-          echo "Running $SESSION_NAME session with $NUM_EMAILS emails..."
-          python send_emails.py
+        run: python main.py
 
-      - name: 💾 Save updated logs & contacts
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add sent_contacts.csv email_log.txt
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update logs ($SESSION_NAME session)"
-          git push
+          git add sent_contacts.csv email_log.txt || echo "No changes to add"
+          git commit -m "Update sent contacts [skip ci]" || echo "No changes to commit"
+          git push origin main
