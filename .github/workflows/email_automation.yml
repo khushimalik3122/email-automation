@@ -40,7 +40,7 @@ jobs:
         env:
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
           NUM_EMAILS: ${{ env.MAIL_COUNT }}
-          DELAY_SECONDS: 12 
+          DELAY_SECONDS: 60
         run: python send_emails.py
 
       - name: Save updated contacts and logs back to GitHub
