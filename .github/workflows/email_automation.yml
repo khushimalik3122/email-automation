@@ -2,10 +2,7 @@ name: Humanized Email Automation (IST)
 
 on:
   schedule:
-    # 4:30 UTC  -> 10:00 AM IST
-    # 8:30 UTC  -> 2:00 PM IST
-    # 11:30 UTC -> 5:00 PM IST
-    # Running Monday to Friday (1-5)
+    # Runs at 10:00 AM, 2:00 PM, and 5:00 PM IST (Mon-Fri)
     - cron: '30 4,8,11 * * 1-5' 
   workflow_dispatch: # Allows manual trigger
 
@@ -13,10 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     
+    # CRITICAL: Grants the runner permission to push files back
     permissions:
       contents: write
 
-    # Setting the timezone globally for the job
     env:
       TZ: Asia/Kolkata
 
@@ -24,7 +21,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # Needed for successful pushing
+          ref: ${{ github.head_ref }} # Automatically gets current branch
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -42,20 +40,10 @@ jobs:
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
         run: python send_emails.py
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Pull to avoid conflicts
-          git pull origin main --rebase
-
-          # Add logs and tracking files
-          git add sent_contacts.csv email_log.txt || echo "Files not found"
-          
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update logs and sent contacts [skip ci]"
-            git push origin main
-          fi
+      - name: Auto-commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update logs and sent contacts [skip ci]"
+          file_pattern: 'sent_contacts.csv email_log.txt'
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
