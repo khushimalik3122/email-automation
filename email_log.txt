@@ -5538,3 +5538,5 @@
 [2026-04-12 23:40:45] 🌙 Outside work hours (23:00). Skipping.
 [2026-04-12 23:44:30] 🌙 Outside work hours (23:00). Skipping.
 [2026-04-13 02:43:12] 🌙 Outside work hours (2:00). Skipping.
+[2026-04-13 02:46:19] ❌ Error: /home/runner/work/email-automation/email-automation/23800+ Ultimate HR Outreach List - DataNiti.xlsx - 3300+ Verified HR Leads.xlsx not found.
+[2026-04-13 02:46:19] ✅ No new contacts to process.
