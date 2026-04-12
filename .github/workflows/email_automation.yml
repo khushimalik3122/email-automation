@@ -41,10 +41,10 @@ jobs:
         run: python send_emails.py
 
       - name: Save updated contacts and logs back to GitHub
+         
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add sent_contacts.csv email_log.txt
-          # Only commit if there are changes to avoid errors
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update sent contacts and logs"
-          git push
+          git add .
+          git status
+          git diff --staged --quiet || (git commit -m "Auto-update sent contacts and logs" && git push)
