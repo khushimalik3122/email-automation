@@ -35,13 +35,15 @@ I came across your work at {company} and really liked what your team is building
 
 I wanted to briefly share my experience:
 
-*Internship — Planto AI*
+Internship — Planto AI
+
 During my internship at Planto AI, I developed AI Coder Pro, a context-aware AI coding assistant integrated within VS Code. I built a Webview-based UI along with a backend extension, and designed agent-based workflows that analyze codebases and automatically generate or modify files. This significantly improved developer productivity and was built with a modular architecture to support multiple AI models.
 
-*Freelance — Zindi (AI/ML Challenges)*
-* In the Amini GeoFM “Decoding the Field” challenge, I built an end-to-end crop classification pipeline using Sentinel-2 time-series data. I engineered features like NDVI and SAVI and implemented a PatchTST-based model combined with ensemble methods, achieving a macro F1-score of 0.75.
+Freelance — Zindi (AI/ML Challenges)
 
-* In the UNIDO AfricaRice Challenge, I developed an offline rice quality grading system using TensorFlow Lite. I optimized a ConvNeXt-based model with FP16 quantization and graph-level improvements, reducing memory usage by ~75% and enabling accurate on-device inference in low-connectivity environments.
+In the Amini GeoFM “Decoding the Field” challenge, I built an end-to-end crop classification pipeline using Sentinel-2 time-series data. I engineered features like NDVI and SAVI and implemented a PatchTST-based model combined with ensemble methods, achieving a macro F1-score of 0.75.
+
+In the UNIDO AfricaRice Challenge, I developed an offline rice quality grading system using TensorFlow Lite. I optimized a ConvNeXt-based model with FP16 quantization and graph-level improvements, reducing memory usage by ~75% and enabling accurate on-device inference in low-connectivity environments.
 
 Across these projects, I’ve focused on building practical AI systems — from GenAI-powered developer tools to time-series modeling and edge deployment.
 
