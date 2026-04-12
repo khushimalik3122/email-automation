@@ -28,10 +28,30 @@ SUBJECTS = [
 ]
 
 TEMPLATES = [
-    "Hi {name},\n\nI came across your work at {company} and genuinely liked what your team is building in the AI/ML space.\n\nI’m currently working on Generative AI and RAG-based systems, focusing on improving model performance.\n\nI’d really appreciate the opportunity to connect and explore if I could contribute.\n\nBest regards,\nKhushi Malik\nLinkedIn: https://www.linkedin.com/in/khushi-6b972b280/",
-    "Hi {name},\n\nYour work at {company} caught my attention while I was exploring teams working on impactful AI/ML solutions.\n\nI’m building systems around Generative AI and scalable ML pipelines. I would love to connect and get your valuable feedback on my work.\n\nBest regards,\nKhushi Malik\nLinkedIn: https://www.linkedin.com/in/khushi-6b972b280/",
-    "Hi {name},\n\nI was recently exploring {company} and found your work particularly interesting.\n\nI’m currently working on AI/ML systems, especially in RAG pipelines, and I’m keen to understand how teams like yours approach scaling such solutions.\n\nBest,\nKhushi Malik\nLinkedIn: https://www.linkedin.com/in/khushi-6b972b280/",
-    "Hi {name},\n\nI had a quick question regarding how your team at {company} is currently approaching AI/ML development.\n\nI’ve been working on similar systems involving Generative AI, and I’m always looking to learn from professionals building impactful solutions.\n\nBest regards,\nKhushi Malik\nLinkedIn: https://www.linkedin.com/in/khushi-6b972b280/"
+    """Hi {name},
+
+I came across your work at {company} and really liked what your team is building in the AI/ML space.
+
+I wanted to briefly share my experience:
+
+*Internship — Planto AI*
+During my internship at Planto AI, I developed AI Coder Pro, a context-aware AI coding assistant integrated within VS Code. I built a Webview-based UI along with a backend extension, and designed agent-based workflows that analyze codebases and automatically generate or modify files. This significantly improved developer productivity and was built with a modular architecture to support multiple AI models.
+
+*Freelance — Zindi (AI/ML Challenges)*
+* In the Amini GeoFM “Decoding the Field” challenge, I built an end-to-end crop classification pipeline using Sentinel-2 time-series data. I engineered features like NDVI and SAVI and implemented a PatchTST-based model combined with ensemble methods, achieving a macro F1-score of 0.75.
+
+* In the UNIDO AfricaRice Challenge, I developed an offline rice quality grading system using TensorFlow Lite. I optimized a ConvNeXt-based model with FP16 quantization and graph-level improvements, reducing memory usage by ~75% and enabling accurate on-device inference in low-connectivity environments.
+
+Across these projects, I’ve focused on building practical AI systems — from GenAI-powered developer tools to time-series modeling and edge deployment.
+
+I’ve attached my CV for your review and would really appreciate any feedback.
+
+I’d love the opportunity to connect and learn from your experience at {company}. Would you be open to a quick 10-minute chat this week?
+
+Best regards,
+Khushi Malik
+📞 +91 95361 10472
+LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/"""
 ]
 
 def log_message(message):
