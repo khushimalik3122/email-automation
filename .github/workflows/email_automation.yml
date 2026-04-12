@@ -2,8 +2,7 @@ name: Humanized Email Automation (IST)
 
 on:
   schedule:
-    # Runs at 10:00 AM, 2:00 PM, and 5:00 PM IST (Mon-Fri)
-    - cron: '30 4,8,11 * * 1-5' 
+    - cron: '30 4,6,8,11 * * 1-7' 
   workflow_dispatch: # Allows manual trigger
 
 jobs:
