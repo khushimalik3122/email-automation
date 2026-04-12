@@ -75,6 +75,8 @@ def human_delay(long_break=False):
     log_message(f"⏳ Waiting {wait} seconds...")
     time.sleep(wait)
 
+
+
 def load_contacts():
     if not os.path.exists(CSV_FILE):
         log_message(f"❌ Error: {CSV_FILE} not found.")
@@ -90,11 +92,26 @@ def load_contacts():
     return df
 
 def update_sent_file(record):
-    """Appends a single record to the sent file immediately."""
-    new_df = pd.DataFrame([record])
+    """Appends a single record to the sent file immediately in the required format."""
+    # Define the exact column order based on your requirement
+    target_columns = ['Date', 'Name', 'Email', 'Company']
+    
+    # Automatically add the current date/time if it wasn't passed in the record
+    if 'Date' not in record:
+        record['Date'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        
+    # Extract only the required fields, defaulting to an empty string if a field is missing
+    formatted_record = {col: record.get(col, '') for col in target_columns}
+    
+    # Create the DataFrame with the strict column order
+    new_df = pd.DataFrame([formatted_record], columns=target_columns)
+    
+    # Save or append to the CSV
     if not os.path.exists(SENT_FILE):
+        # Create new file with headers
         new_df.to_csv(SENT_FILE, index=False)
     else:
+        # Append to existing file without adding headers again
         new_df.to_csv(SENT_FILE, mode='a', header=False, index=False)
 
 def send_emails():
