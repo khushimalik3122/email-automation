@@ -2,7 +2,7 @@ name: Humanized Email Automation (IST)
 
 on:
   schedule:
-    - cron: '30 4,6,8,11 * * 1-7' 
+    - cron: '30 4,6,8,11 * * 1-5' 
   workflow_dispatch: # Allows manual trigger
 
 jobs:
