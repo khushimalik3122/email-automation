@@ -8,7 +8,7 @@ from datetime import datetime
 # --- CONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Updated to your Excel file
-CSV_FILE = os.path.join(BASE_DIR, '23800+ Ultimate HR Outreach List - DataNiti.xlsx - 3300+ Verified HR Leads.xlsx')
+CSV_FILE = os.path.join(BASE_DIR, 'sentagain_contacts.xlsx')
 SENT_FILE = os.path.join(BASE_DIR, 'sent_contacts.csv')
 LOG_FILE = os.path.join(BASE_DIR, 'email_log.txt')
 RESUME_FILE = os.path.join(BASE_DIR, 'Khushi(4).pdf')
