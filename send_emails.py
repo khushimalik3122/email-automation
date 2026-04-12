@@ -7,17 +7,18 @@ from datetime import datetime
 
 # --- CONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CSV_FILE = os.path.join(BASE_DIR, 'sentagain_contacts.csv')
+# Updated to your Excel file
+CSV_FILE = os.path.join(BASE_DIR, '23800+ Ultimate HR Outreach List - DataNiti.xlsx - 3300+ Verified HR Leads.xlsx')
 SENT_FILE = os.path.join(BASE_DIR, 'sent_contacts.csv')
 LOG_FILE = os.path.join(BASE_DIR, 'email_log.txt')
 RESUME_FILE = os.path.join(BASE_DIR, 'Khushi(4).pdf')
 
 # Recommended: Set these in your environment variables for security
-YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'Khushimalik511263@gmail.com')
+YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'khushimalik15566@gmail.com')
 YOUR_APP_PASSWORD = os.environ.get('APP_PASSWORD')
 
 # --- HUMAN LOGIC SETTINGS ---
-WORK_START = 1  # 9 AM
+WORK_START = 9  # 9 AM (Adjusted to standard format, 1 was 1 AM)
 WORK_END = 19   # 7 PM
 
 SUBJECTS = [
@@ -80,43 +81,54 @@ def human_delay(long_break=False):
     log_message(f"⏳ Waiting {wait} seconds...")
     time.sleep(wait)
 
-
-
 def load_contacts():
     if not os.path.exists(CSV_FILE):
         log_message(f"❌ Error: {CSV_FILE} not found.")
         return pd.DataFrame()
     
-    df = pd.read_csv(CSV_FILE)
-    df.columns = df.columns.str.strip() # Clean headers
-    df = df.dropna(subset=['Email', 'Name'])
+    try:
+        if CSV_FILE.endswith('.xlsx'):
+            df = pd.read_excel(CSV_FILE, engine='openpyxl')
+        else:
+            df = pd.read_csv(CSV_FILE)
+    except Exception as e:
+        log_message(f"❌ Failed to read the file. Error: {e}")
+        return pd.DataFrame()
     
-    if os.path.exists(SENT_FILE):
-        sent = pd.read_csv(SENT_FILE)
-        df = df[~df['Email'].isin(sent['Email'])]
+    df.columns = df.columns.str.strip() # Clean headers
+    df = df.dropna(how='all')
+    
+    # Ensure these columns exist in your Excel file
+    required_columns = ['Name', 'Email']
+    for col in required_columns:
+        if col not in df.columns:
+            log_message(f"❌ Missing required column: {col}")
+            return pd.DataFrame()
+            
+    df = df.dropna(subset=required_columns)
+    
+    # Create empty sent file if it doesn't exist to prevent errors
+    if not os.path.exists(SENT_FILE):
+        pd.DataFrame(columns=['Date', 'Name', 'Email', 'Company']).to_csv(SENT_FILE, index=False)
+        
+    sent = pd.read_csv(SENT_FILE)
+    df = df[~df['Email'].isin(sent['Email'])]
+    
     return df
 
 def update_sent_file(record):
-    """Appends a single record to the sent file immediately in the required format."""
-    # Define the exact column order based on your requirement
+    """Appends a single record to the sent file immediately."""
     target_columns = ['Date', 'Name', 'Email', 'Company']
     
-    # Automatically add the current date/time if it wasn't passed in the record
     if 'Date' not in record:
         record['Date'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         
-    # Extract only the required fields, defaulting to an empty string if a field is missing
     formatted_record = {col: record.get(col, '') for col in target_columns}
-    
-    # Create the DataFrame with the strict column order
     new_df = pd.DataFrame([formatted_record], columns=target_columns)
     
-    # Save or append to the CSV
     if not os.path.exists(SENT_FILE):
-        # Create new file with headers
         new_df.to_csv(SENT_FILE, index=False)
     else:
-        # Append to existing file without adding headers again
         new_df.to_csv(SENT_FILE, mode='a', header=False, index=False)
 
 def send_emails():
@@ -133,7 +145,8 @@ def send_emails():
         log_message("✅ No new contacts to process.")
         return
 
-    batch_count = random.randint(8, 14)
+    # Randomize batch size to look human
+    batch_count = random.randint(15, 20)
     session_batch = contacts.sample(frac=1).reset_index(drop=True).head(batch_count)
     
     try:
@@ -143,7 +156,11 @@ def send_emails():
         for i, (idx, row) in enumerate(session_batch.iterrows()):
             try:
                 name, email = row['Name'], row['Email']
-                company = row['Company'] if pd.notna(row['Company']) else "your team"
+                
+                # Handle cases where 'Company' column might not exist or be empty
+                company = row.get('Company', "your team")
+                if pd.isna(company) or company == "": 
+                    company = "your team"
                 
                 subject = random.choice(SUBJECTS).format(company=company)
                 body = random.choice(TEMPLATES).format(name=name, company=company)
@@ -151,8 +168,11 @@ def send_emails():
                 yag.send(to=email, subject=subject, contents=body, attachments=RESUME_FILE)
                 log_message(f"✅ [{i+1}/{len(session_batch)}] Sent to {name} ({email})")
 
+                # INSTANT SAVE FIX
                 update_sent_file({
-                    'Name': name, 'Email': email, 'Company': company, 
+                    'Name': name, 
+                    'Email': email, 
+                    'Company': company, 
                     'Date': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 })
 
@@ -165,7 +185,7 @@ def send_emails():
 
             except Exception as e:
                 log_message(f"❌ Failed for {name}: {str(e)}")
-                time.sleep(30)
+                time.sleep(30) # Wait a bit if a send fails before trying the next
                 
     finally:
         if 'yag' in locals():
