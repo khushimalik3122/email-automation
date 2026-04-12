@@ -1,22 +1,30 @@
-name: Humanized Email Automation
+name: Humanized Email Automation (IST)
 
 on:
   schedule:
-    - cron: '0 4,8,12 * * *' # 
-  workflow_dispatch: #
+    # 4:30 UTC  -> 10:00 AM IST
+    # 8:30 UTC  -> 2:00 PM IST
+    # 11:30 UTC -> 5:00 PM IST
+    # Running Monday to Friday (1-5)
+    - cron: '30 4,8,11 * * 1-5' 
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   build:
     runs-on: ubuntu-latest
     
-    # --- CRITICAL FIX FOR 403 ERROR ---
     permissions:
       contents: write
-    # ----------------------------------
+
+    # Setting the timezone globally for the job
+    env:
+      TZ: Asia/Kolkata
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -38,6 +46,16 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add sent_contacts.csv email_log.txt || echo "No changes to add"
-          git commit -m "Update sent contacts [skip ci]" || echo "No changes to commit"
-          git push origin main
+          
+          # Pull to avoid conflicts
+          git pull origin main --rebase
+
+          # Add logs and tracking files
+          git add sent_contacts.csv email_log.txt || echo "Files not found"
+          
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update logs and sent contacts [skip ci]"
+            git push origin main
+          fi
