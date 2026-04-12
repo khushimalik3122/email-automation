@@ -10,6 +10,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV_FILE = os.path.join(BASE_DIR, 'sentagain_contacts.csv')
 SENT_FILE = os.path.join(BASE_DIR, 'sent_contacts.csv')
 LOG_FILE = os.path.join(BASE_DIR, 'email_log.txt')
+RESUME_FILE = os.path.join(BASE_DIR, 'Khushi(4).pdf')
 
 # Recommended: Set these in your environment variables for security
 YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'Khushimalik511263@gmail.com')
@@ -52,6 +53,8 @@ Best regards,
 Khushi Malik
 📞 +91 95361 10472
 LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/"""
+
+    
 ]
 
 def log_message(message):
@@ -115,11 +118,12 @@ def update_sent_file(record):
         new_df.to_csv(SENT_FILE, mode='a', header=False, index=False)
 
 def send_emails():
-    if not is_human_time():
-        return
-    
+    if not is_human_time(): return
     if not YOUR_APP_PASSWORD:
-        log_message("❌ Error: APP_PASSWORD not found in environment variables.")
+        log_message("❌ Error: APP_PASSWORD environment variable not set.")
+        return 
+    if not os.path.exists(RESUME_FILE):
+        log_message(f"❌ Error: Resume file {RESUME_FILE} not found.")
         return
 
     contacts = load_contacts()
@@ -127,42 +131,44 @@ def send_emails():
         log_message("✅ No new contacts to process.")
         return
 
-    # Randomize batch size (8 to 14)
     batch_count = random.randint(8, 14)
     session_batch = contacts.sample(frac=1).reset_index(drop=True).head(batch_count)
     
-    yag = yagmail.SMTP(YOUR_EMAIL, YOUR_APP_PASSWORD)
-    log_message(f"🚀 Starting session. Batch size: {len(session_batch)}")
+    try:
+        yag = yagmail.SMTP(YOUR_EMAIL, YOUR_APP_PASSWORD)
+        log_message(f"🚀 Starting session. Batch size: {len(session_batch)}")
 
-    for i, row in session_batch.iterrows():
-        try:
-            name, email = row['Name'], row['Email']
-            company = row['Company'] if pd.notna(row['Company']) else "your team"
-            
-            subject = random.choice(SUBJECTS).format(company=company)
-            body = random.choice(TEMPLATES).format(name=name, company=company)
+        for i, (idx, row) in enumerate(session_batch.iterrows()):
+            try:
+                name, email = row['Name'], row['Email']
+                company = row['Company'] if pd.notna(row['Company']) else "your team"
+                
+                subject = random.choice(SUBJECTS).format(company=company)
+                body = random.choice(TEMPLATES).format(name=name, company=company)
 
-            yag.send(to=email, subject=subject, contents=body)
-            log_message(f"✅ [{i+1}/{len(session_batch)}] Sent to {name} ({email})")
+                yag.send(to=email, subject=subject, contents=body, attachments=RESUME_FILE)
+                log_message(f"✅ [{i+1}/{len(session_batch)}] Sent to {name} ({email})")
 
-            # Save immediately so we don't repeat if script stops
-            update_sent_file({
-                'Name': name, 'Email': email, 'Company': company, 
-                'Date': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            })
+                update_sent_file({
+                    'Name': name, 'Email': email, 'Company': company, 
+                    'Date': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                })
 
-            # Break logic
-            if (i + 1) == len(session_batch):
-                log_message("🏁 Session complete.")
-            elif (i + 1) % random.randint(3, 5) == 0:
-                log_message("☕ Taking a coffee break...")
-                human_delay(long_break=True)
-            else:
-                human_delay(long_break=False)
+                if (i + 1) == len(session_batch):
+                    log_message("🏁 Session complete.")
+                else:
+                    is_long = (i + 1) % random.randint(3, 5) == 0
+                    if is_long: log_message("☕ Taking a coffee break...")
+                    human_delay(long_break=is_long)
 
-        except Exception as e:
-            log_message(f"❌ Failed to send to {name}: {str(e)}")
-            time.sleep(60) # Wait a minute before trying the next one
+            except Exception as e:
+                log_message(f"❌ Failed for {name}: {str(e)}")
+                time.sleep(30)
+                
+    finally:
+        if 'yag' in locals():
+            yag.close()
+            log_message("🔒 SMTP session closed.")
 
 if __name__ == "__main__":
     send_emails()
