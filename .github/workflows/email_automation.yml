@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Needed for successful pushing
-          ref: ${{ github.head_ref }} # Automatically gets current branch
+          
 
       - name: Set up Python
         uses: actions/setup-python@v4
