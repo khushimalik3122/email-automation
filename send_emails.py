@@ -18,7 +18,7 @@ YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'khushimalik15566@gmail.com')
 YOUR_APP_PASSWORD = os.environ.get('APP_PASSWORD')
 
 # --- HUMAN LOGIC SETTINGS ---
-WORK_START = 9  # 9 AM (Adjusted to standard format, 1 was 1 AM)
+WORK_START = 1 # 9 AM (Adjusted to standard format, 1 was 1 AM)
 WORK_END = 19   # 7 PM
 
 SUBJECTS = [
