@@ -8,13 +8,13 @@ from datetime import datetime
 # --- CONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Updated to your Excel file
-CSV_FILE = os.path.join(BASE_DIR, 'sentagain_contacts.xlsx')
+CSV_FILE = os.path.join(BASE_DIR, 'Final_Verified_Domains.xlsx')
 SENT_FILE = os.path.join(BASE_DIR, 'sent_contacts.csv')
 LOG_FILE = os.path.join(BASE_DIR, 'email_log.txt')
 RESUME_FILE = os.path.join(BASE_DIR, 'Khushi(4).pdf')
 
 # Recommended: Set these in your environment variables for security
-YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'khushimalik15566@gmail.com')
+YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'khushimalik511263@gmail.com')
 YOUR_APP_PASSWORD = os.environ.get('APP_PASSWORD')
 
 # --- HUMAN LOGIC SETTINGS ---
