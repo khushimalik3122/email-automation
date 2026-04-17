@@ -6208,3 +6208,5 @@
 [2026-04-16 18:47:55] ✅ [18/18] Sent to Anchal Saxena (anchal@durha.com)
 [2026-04-16 18:47:55] 🏁 Session complete.
 [2026-04-16 18:47:55] 🔒 SMTP session closed.
+[2026-04-17 11:48:50] ❌ Missing required column: Name
+[2026-04-17 11:48:50] ✅ No new contacts to process.
