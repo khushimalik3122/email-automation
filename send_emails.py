@@ -30,7 +30,7 @@ SUBJECTS = [
 ]
 
 TEMPLATES = [
-    """Hi {name},
+    """Dear Hiring Manager,
 
 I came across your work at {company} and really liked what your team is building in the AI/ML space.
 
@@ -99,7 +99,7 @@ def load_contacts():
     df = df.dropna(how='all')
     
     # Ensure these columns exist in your Excel file
-    required_columns = ['Name', 'Email']
+    required_columns = ['Email']
     for col in required_columns:
         if col not in df.columns:
             log_message(f"❌ Missing required column: {col}")
@@ -109,7 +109,7 @@ def load_contacts():
     
     # Create empty sent file if it doesn't exist to prevent errors
     if not os.path.exists(SENT_FILE):
-        pd.DataFrame(columns=['Date', 'Name', 'Email', 'Company']).to_csv(SENT_FILE, index=False)
+        pd.DataFrame(columns=['Date', 'Email','Company Name']).to_csv(SENT_FILE, index=False)
         
     sent = pd.read_csv(SENT_FILE)
     df = df[~df['Email'].isin(sent['Email'])]
@@ -118,7 +118,7 @@ def load_contacts():
 
 def update_sent_file(record):
     """Appends a single record to the sent file immediately."""
-    target_columns = ['Date', 'Name', 'Email', 'Company']
+    target_columns = ['Date', 'Email', 'Company Name']
     
     if 'Date' not in record:
         record['Date'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -155,24 +155,30 @@ def send_emails():
 
         for i, (idx, row) in enumerate(session_batch.iterrows()):
             try:
-                name, email = row['Name'], row['Email']
+                df.columns = df.columns.str.strip().str.lower()
+
+# then use
+                email = row['email']
+                company = row.get('company name', "your team")
+                
+              
                 
                 # Handle cases where 'Company' column might not exist or be empty
-                company = row.get('Company', "your team")
+              
                 if pd.isna(company) or company == "": 
                     company = "your team"
                 
                 subject = random.choice(SUBJECTS).format(company=company)
-                body = random.choice(TEMPLATES).format(name=name, company=company)
+                body = random.choice(TEMPLATES).format(company=company)
 
                 yag.send(to=email, subject=subject, contents=body, attachments=RESUME_FILE)
-                log_message(f"✅ [{i+1}/{len(session_batch)}] Sent to {name} ({email})")
+                log_message(f"✅ [{i+1}/{len(session_batch)}] Sent to ({email})")
 
                 # INSTANT SAVE FIX
                 update_sent_file({
-                    'Name': name, 
+                    
                     'Email': email, 
-                    'Company': company, 
+                    'Company Name': company, 
                     'Date': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 })
 
@@ -184,7 +190,7 @@ def send_emails():
                     human_delay(long_break=is_long)
 
             except Exception as e:
-                log_message(f"❌ Failed for {name}: {str(e)}")
+                log_message(f"❌ Failed for {email}: {str(e)}")
                 time.sleep(30) # Wait a bit if a send fails before trying the next
                 
     finally:
