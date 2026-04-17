@@ -6212,3 +6212,5 @@
 [2026-04-17 11:48:50] ✅ No new contacts to process.
 [2026-04-17 13:41:08] ❌ Missing required column: Name
 [2026-04-17 13:41:08] ✅ No new contacts to process.
+[2026-04-17 15:23:30] ❌ Missing required column: Name
+[2026-04-17 15:23:30] ✅ No new contacts to process.
