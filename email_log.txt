@@ -6214,3 +6214,18 @@
 [2026-04-17 13:41:08] ✅ No new contacts to process.
 [2026-04-17 15:23:30] ❌ Missing required column: Name
 [2026-04-17 15:23:30] ✅ No new contacts to process.
+[2026-04-19 12:55:31] ☀️ Weekend skip.
+[2026-04-19 12:58:28] ❌ Error: APP_PASSWORD environment variable not set.
+[2026-04-19 12:58:50] ❌ Error: APP_PASSWORD environment variable not set.
+[2026-04-19 13:00:24] 🚀 Starting session. Batch size: 15
+[2026-04-19 13:00:29] ✅ [1/15] Sent to (jyoti.ansari@bllifesciences.com)
+[2026-04-19 13:00:29] ⏳ Waiting 124 seconds...
+[2026-04-19 13:02:38] ✅ [2/15] Sent to (savita.hortikar@oracle.com)
+[2026-04-19 13:02:38] ⏳ Waiting 122 seconds...
+[2026-04-19 13:02:44] 🔒 SMTP session closed.
+[2026-04-19 14:48:22] 🚀 Starting session. Batch size: 20
+[2026-04-19 14:48:29] ✅ [1/20] Sent to (satyendu.naik@kcsitglobal.com)
+[2026-04-19 14:48:29] ⏳ Waiting 2 seconds...
+[2026-04-19 14:48:35] ✅ [2/20] Sent to (maryc@novelteam.com)
+[2026-04-19 14:48:35] ⏳ Waiting 2 seconds...
+[2026-04-19 14:48:42] 🔒 SMTP session closed.

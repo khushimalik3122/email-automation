@@ -15,7 +15,7 @@ RESUME_FILE = os.path.join(BASE_DIR, 'Khushi(4).pdf')
 
 # Recommended: Set these in your environment variables for security
 YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'khushimalik511263@gmail.com')
-YOUR_APP_PASSWORD = os.environ.get('APP_PASSWORD')
+YOUR_APP_PASSWORD = 'mvpkvskgfbtqehdi'
 
 # --- HUMAN LOGIC SETTINGS ---
 WORK_START = 1 # 9 AM (Adjusted to standard format, 1 was 1 AM)
@@ -56,13 +56,12 @@ Best regards,
 Khushi Malik
 📞 +91 95361 10472
 LinkedIn: https://www.linkedin.com/in/khushi-6b972b280/"""
-
-    
 ]
 
 def log_message(message):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open(LOG_FILE, "a") as f:
+    # FIX 1: Added encoding="utf-8" to handle emojis properly
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(f"[{timestamp}] {message}\n")
     print(message)
 
@@ -71,13 +70,14 @@ def is_human_time():
     if not (WORK_START <= now.hour <= WORK_END):
         log_message(f"🌙 Outside work hours ({now.hour}:00). Skipping.")
         return False
-    if now.strftime('%A') in ['Saturday', 'Sunday']:
-        log_message("☀️ Weekend skip.")
-        return False
+    # if now.strftime('%A') in ['Saturday', 'Sunday']:
+    #     log_message("☀️ Weekend skip.")
+    #     return False
     return True
 
 def human_delay(long_break=False):
-    wait = random.randint(300, 800) if long_break else random.randint(45, 150)
+    # Set wait time to exactly 2 seconds for testing
+    wait = 2 
     log_message(f"⏳ Waiting {wait} seconds...")
     time.sleep(wait)
 
@@ -154,17 +154,14 @@ def send_emails():
         log_message(f"🚀 Starting session. Batch size: {len(session_batch)}")
 
         for i, (idx, row) in enumerate(session_batch.iterrows()):
+            email = None  # Initialize to None for the exception block
             try:
-                df.columns = df.columns.str.strip().str.lower()
-
-# then use
-                email = row['email']
-                company = row.get('company name', "your team")
-                
-              
+                # FIX 2: Removed df.columns logic that was causing NameError
+                # and corrected column names to match load_contacts format
+                email = row['Email']
+                company = row.get('Company Name', "your team")
                 
                 # Handle cases where 'Company' column might not exist or be empty
-              
                 if pd.isna(company) or company == "": 
                     company = "your team"
                 
@@ -176,7 +173,6 @@ def send_emails():
 
                 # INSTANT SAVE FIX
                 update_sent_file({
-                    
                     'Email': email, 
                     'Company Name': company, 
                     'Date': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -190,7 +186,9 @@ def send_emails():
                     human_delay(long_break=is_long)
 
             except Exception as e:
-                log_message(f"❌ Failed for {email}: {str(e)}")
+                # Fallback email string in case it crashes before email is assigned
+                email_str = email if email else "Unknown"
+                log_message(f"❌ Failed for {email_str}: {str(e)}")
                 time.sleep(30) # Wait a bit if a send fails before trying the next
                 
     finally:
