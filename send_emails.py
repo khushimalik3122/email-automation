@@ -77,7 +77,7 @@ def is_human_time():
 
 def human_delay(long_break=False):
     # Set wait time to exactly 2 seconds for testing
-    wait = 2 
+    wait = 120
     log_message(f"⏳ Waiting {wait} seconds...")
     time.sleep(wait)
 
