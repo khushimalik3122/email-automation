@@ -7713,3 +7713,20 @@
 [2026-05-01 18:18:53] ✅ [19/19] Sent to (devendra@digitalforce.in)
 [2026-05-01 18:18:53] 🏁 Session complete.
 [2026-05-01 18:18:53] 🔒 SMTP session closed.
+[2026-05-04 13:01:42] 🚀 Starting session. Batch size: 15
+[2026-05-04 13:01:43] ❌ Failed for ameesha.yadav@white-force.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-12df8279e57sm13379493c88.3 - gsmtp')
+[2026-05-04 13:02:14] ❌ Failed for rajesh@finahub.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3889d634sm17611214eec.3 - gsmtp')
+[2026-05-04 13:02:46] ❌ Failed for sonia.gahlot@fivesdigital.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3889d657sm14959691eec.4 - gsmtp')
+[2026-05-04 13:03:17] ❌ Failed for anchal.singh@decentro.tech: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3bb60811sm14663566eec.24 - gsmtp')
+[2026-05-04 13:03:47] ❌ Failed for shweta@valuecoders.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3bc6a79esm17330056eec.26 - gsmtp')
+[2026-05-04 13:04:18] ❌ Failed for msindia@eal-consulting.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-12df845e220sm16084562c88.15 - gsmtp')
+[2026-05-04 13:04:49] ❌ Failed for joshua.t@sailotech.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3b29b12asm15902741eec.15 - gsmtp')
+[2026-05-04 13:05:20] ❌ Failed for sanjayv@zenithsoft.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3b29b1a4sm14938548eec.18 - gsmtp')
+[2026-05-04 13:05:52] ❌ Failed for akaskaul@in.ibm.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3537d300sm18117879eec.0 - gsmtp')
+[2026-05-04 13:06:23] ❌ Failed for in.bosch.comlingesh_kumar@dell.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3c05dc28sm14218765eec.30 - gsmtp')
+[2026-05-04 13:06:54] ❌ Failed for tushardutt90@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3bf6811fsm14783155eec.29 - gsmtp')
+[2026-05-04 13:07:25] ❌ Failed for anshu.devi@kindlebit.org: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3b390df0sm14930782eec.17 - gsmtp')
+[2026-05-04 13:07:56] ❌ Failed for alasubramaniam.atla@tcs.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-12df8431037sm14716836c88.12 - gsmtp')
+[2026-05-04 13:08:27] ❌ Failed for rajeev.bhardwaj@sunlife.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-12df8278e7dsm13666871c88.2 - gsmtp')
+[2026-05-04 13:08:58] ❌ Failed for hrd@gvpr.co.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-2ee3889d657sm14974754eec.4 - gsmtp')
+[2026-05-04 13:09:28] 🔒 SMTP session closed.
