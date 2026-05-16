@@ -8303,3 +8303,4 @@
 [2026-05-15 18:49:55] ❌ Failed for sangeeta.tandon@ionidea.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d75a77b69052e-5164581fdf9sm44016741cf.24 - gsmtp')
 [2026-05-15 18:50:26] ❌ Failed for drshibus@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-8c90c372117sm51919546d6.47 - gsmtp')
 [2026-05-15 18:50:56] 🔒 SMTP session closed.
+[2026-05-17 00:45:10] 🌙 Outside work hours (0:00). Skipping.
