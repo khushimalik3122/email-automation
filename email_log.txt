@@ -8325,3 +8325,4 @@
 [2026-05-18 14:09:19] ❌ Failed for career@aristiec.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5614622812f47-482ee334765sm4654002b6e.1 - gsmtp')
 [2026-05-18 14:09:50] ❌ Failed for vaishnavi.hr@collegepur.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 46e09a7af769-7e55b95b82fsm8252195a34.12 - gsmtp')
 [2026-05-18 14:10:20] 🔒 SMTP session closed.
+[2026-05-18 20:11:14] 🌙 Outside work hours (20:00). Skipping.
