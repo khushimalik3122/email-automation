@@ -8704,3 +8704,4 @@
 [2026-06-01 15:17:47] ❌ Failed for career@getondata.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-304ed2c312csm8827202eec.6 - gsmtp')
 [2026-06-01 15:18:18] ❌ Failed for zeel.mokaria@imsplgroup.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-304ed578c48sm8009835eec.20 - gsmtp')
 [2026-06-01 15:18:48] 🔒 SMTP session closed.
+[2026-06-01 22:30:07] 🌙 Outside work hours (22:00). Skipping.
