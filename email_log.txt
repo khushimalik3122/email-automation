@@ -8722,3 +8722,4 @@
 [2026-06-02 14:28:14] ❌ Failed for rajesh@finahub.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-304ee0dd8e1sm15369150eec.21 - gsmtp')
 [2026-06-02 14:28:45] ❌ Failed for sveena@solulab.co: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-304ed2c3121sm11389387eec.5 - gsmtp')
 [2026-06-02 14:29:15] 🔒 SMTP session closed.
+[2026-06-02 21:08:46] 🌙 Outside work hours (21:00). Skipping.
