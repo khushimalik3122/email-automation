@@ -8893,3 +8893,4 @@
 [2026-06-10 14:08:15] ❌ Failed for pranjal@codefire.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5614622812f47-4865b5a5a64sm18090752b6e.4 - gsmtp')
 [2026-06-10 14:08:46] ❌ Failed for subbusuryan@yahoo.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5614622812f47-4865b977c46sm19569023b6e.14 - gsmtp')
 [2026-06-10 14:09:16] 🔒 SMTP session closed.
+[2026-06-10 20:05:09] 🌙 Outside work hours (20:00). Skipping.
