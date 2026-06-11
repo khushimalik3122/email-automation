@@ -8914,3 +8914,4 @@
 [2026-06-11 14:36:37] ❌ Failed for jitender@zipgo.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-30806e8b141sm1199980eec.15 - gsmtp')
 [2026-06-11 14:37:08] ❌ Failed for sunnygoa1@yahoo.co.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-30806e8a9f3sm1302177eec.18 - gsmtp')
 [2026-06-11 14:37:38] 🔒 SMTP session closed.
+[2026-06-11 20:32:47] 🌙 Outside work hours (20:00). Skipping.
