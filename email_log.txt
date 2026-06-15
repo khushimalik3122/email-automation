@@ -8975,3 +8975,4 @@
 [2026-06-15 16:21:56] ❌ Failed for shalini@intelegain.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5614622812f47-4875df8284asm2470726b6e.11 - gsmtp')
 [2026-06-15 16:22:26] ❌ Failed for tarun.pant@securelyshare.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 006d021491bc7-69f00d2138dsm2737886eaf.5 - gsmtp')
 [2026-06-15 16:22:56] 🔒 SMTP session closed.
+[2026-06-15 21:55:24] 🌙 Outside work hours (21:00). Skipping.
