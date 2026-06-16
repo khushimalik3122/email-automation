@@ -8994,3 +8994,4 @@
 [2026-06-16 15:16:32] ❌ Failed for pankajguglani@redquanta.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-8d9f1dc7432sm27511226d6.19 - gsmtp')
 [2026-06-16 15:17:02] ❌ Failed for monika@bridgelabz.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-91619ed7f16sm1374227885a.1 - gsmtp')
 [2026-06-16 15:17:32] 🔒 SMTP session closed.
+[2026-06-16 21:39:15] 🌙 Outside work hours (21:00). Skipping.
