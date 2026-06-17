@@ -9013,3 +9013,4 @@
 [2026-06-17 14:54:56] ❌ Failed for sampada@tech-prastish.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-8d9f4556922sm59282236d6.24 - gsmtp')
 [2026-06-17 14:55:27] ❌ Failed for athil.ks@cultfit.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-8d9f4ff32a3sm59986656d6.36 - gsmtp')
 [2026-06-17 14:55:57] 🔒 SMTP session closed.
+[2026-06-17 20:05:02] 🌙 Outside work hours (20:00). Skipping.
