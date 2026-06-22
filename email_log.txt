@@ -9112,3 +9112,4 @@
 [2026-06-22 15:59:27] ❌ Failed for kmrayush@google.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-139adca1b00sm7123262c88.2 - gsmtp')
 [2026-06-22 15:59:58] ❌ Failed for hemalatha@sightspectrum.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-30c1bdeb65fsm9669677eec.22 - gsmtp')
 [2026-06-22 16:00:28] 🔒 SMTP session closed.
+[2026-06-22 21:39:50] 🌙 Outside work hours (21:00). Skipping.
