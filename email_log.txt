@@ -9358,3 +9358,4 @@
 [2026-06-29 14:53:08] ❌ Failed for kanchan.verma@qsstechnosoft.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-925fda626b9sm2055528285a.14 - gsmtp')
 [2026-06-29 14:53:39] ❌ Failed for vithika@optimizeitsystems.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-925fda621f7sm1964492485a.15 - gsmtp')
 [2026-06-29 14:54:09] 🔒 SMTP session closed.
+[2026-06-29 20:26:53] 🌙 Outside work hours (20:00). Skipping.
