@@ -11970,3 +11970,4 @@
 [2026-08-26 17:33:56] ❌ Failed for hrd@ebss.org: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2d701e7f41bsm6417845ad.0 - gsmtp')
 [2026-08-26 17:34:26] 🔒 SMTP session closed.
 [2026-08-27 20:53:13] 🌙 Outside work hours (20:00). Skipping.
+[2026-08-28 22:18:03] 🌙 Outside work hours (22:00). Skipping.
