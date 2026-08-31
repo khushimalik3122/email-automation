@@ -11990,3 +11990,4 @@
 [2026-08-31 16:39:40] ❌ Failed for pradnya.kulkarni@afourtech.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3286f959575sm29188311eec.15 - gsmtp')
 [2026-08-31 16:40:10] ❌ Failed for francis.gonsalves@moengage.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-142e0de4de3sm38187370c88.12 - gsmtp')
 [2026-08-31 16:40:40] 🔒 SMTP session closed.
+[2026-08-31 23:33:42] 🌙 Outside work hours (23:00). Skipping.
