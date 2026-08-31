@@ -11971,3 +11971,22 @@
 [2026-08-26 17:34:26] 🔒 SMTP session closed.
 [2026-08-27 20:53:13] 🌙 Outside work hours (20:00). Skipping.
 [2026-08-28 22:18:03] 🌙 Outside work hours (22:00). Skipping.
+[2026-08-31 16:31:53] 🚀 Starting session. Batch size: 17
+[2026-08-31 16:31:54] ❌ Failed for sainishaban@yahoo.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3286f9e2a95sm27767256eec.23 - gsmtp')
+[2026-08-31 16:32:25] ❌ Failed for mail@lexprotector.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-32bdfd03e71sm11798644eec.1 - gsmtp')
+[2026-08-31 16:32:56] ❌ Failed for sharma@indiamart.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-142e0d2e465sm41556983c88.4 - gsmtp')
+[2026-08-31 16:33:27] ❌ Failed for renu.naryal@encaptechno.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-32b5bef7683sm14927790eec.12 - gsmtp')
+[2026-08-31 16:33:58] ❌ Failed for mchakraborty@phdata.io: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3286f995e60sm29759879eec.22 - gsmtp')
+[2026-08-31 16:34:29] ❌ Failed for career@cranberryindia.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3286fa400c8sm33552275eec.30 - gsmtp')
+[2026-08-31 16:35:00] ❌ Failed for sachinbhatt@cae.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3286f9e2a95sm27797924eec.23 - gsmtp')
+[2026-08-31 16:35:31] ❌ Failed for neha.hresource@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-32b28ab0571sm20350350eec.4 - gsmtp')
+[2026-08-31 16:36:02] ❌ Failed for svegesna@criterionnetworks.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-142e0de4d92sm25254352c88.13 - gsmtp')
+[2026-08-31 16:36:33] ❌ Failed for bharthi.palla@translogicsys.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-142e0dc898dsm26844749c88.9 - gsmtp')
+[2026-08-31 16:37:04] ❌ Failed for pragati.tilve@creativecapsule.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-32bdfd03e71sm11849007eec.1 - gsmtp')
+[2026-08-31 16:37:35] ❌ Failed for sridhar.srinivasan@boardex.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-142e0d40ac7sm26633058c88.7 - gsmtp')
+[2026-08-31 16:38:06] ❌ Failed for shivani.ragati@instaresz.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-142e0de4de3sm38163351c88.12 - gsmtp')
+[2026-08-31 16:38:38] ❌ Failed for vikrantkjain@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-32b4bc05416sm14663469eec.6 - gsmtp')
+[2026-08-31 16:39:09] ❌ Failed for masoodalam51@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3286f9e907fsm26043685eec.25 - gsmtp')
+[2026-08-31 16:39:40] ❌ Failed for pradnya.kulkarni@afourtech.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3286f959575sm29188311eec.15 - gsmtp')
+[2026-08-31 16:40:10] ❌ Failed for francis.gonsalves@moengage.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-142e0de4de3sm38187370c88.12 - gsmtp')
+[2026-08-31 16:40:40] 🔒 SMTP session closed.
