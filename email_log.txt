@@ -12010,3 +12010,4 @@
 [2026-09-01 15:09:12] ❌ Failed for sushil@kljindia.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-90ce444e2c5sm105007096d6.10 - gsmtp')
 [2026-09-01 15:09:42] ❌ Failed for sunandha@telliant.net: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-90ce444dae0sm105459666d6.4 - gsmtp')
 [2026-09-01 15:10:12] 🔒 SMTP session closed.
+[2026-09-01 21:00:20] 🌙 Outside work hours (21:00). Skipping.
