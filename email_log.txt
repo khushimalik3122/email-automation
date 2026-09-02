@@ -12031,3 +12031,4 @@
 [2026-09-02 14:33:39] ❌ Failed for harshithab@novotreeminds.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-9395f157adesm158167885a.1 - gsmtp')
 [2026-09-02 14:34:10] ❌ Failed for vidhya.sam@superops.ai: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-9395f17eefdsm158332485a.11 - gsmtp')
 [2026-09-02 14:34:40] 🔒 SMTP session closed.
+[2026-09-02 20:41:48] 🌙 Outside work hours (20:00). Skipping.
