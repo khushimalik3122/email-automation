@@ -12050,3 +12050,4 @@
 [2026-09-03 14:41:32] ❌ Failed for blatha@roljobs.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-143199692a6sm7926974c88.12 - gsmtp')
 [2026-09-03 14:42:03] ❌ Failed for anil.pereira@visiblealpha.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14319785bd8sm8235326c88.0 - gsmtp')
 [2026-09-03 14:42:33] 🔒 SMTP session closed.
+[2026-09-03 20:35:36] 🌙 Outside work hours (20:00). Skipping.
