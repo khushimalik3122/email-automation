@@ -12072,3 +12072,4 @@
 [2026-09-04 14:36:29] ❌ Failed for vivek.gharat@jsmcorp.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3339b8f787esm4688291eec.23 - gsmtp')
 [2026-09-04 14:37:00] ❌ Failed for akanksha.puri@sourcefuse.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-143240d86c3sm5010670c88.0 - gsmtp')
 [2026-09-04 14:37:30] 🔒 SMTP session closed.
+[2026-09-04 20:32:06] 🌙 Outside work hours (20:00). Skipping.
