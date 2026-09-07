@@ -12093,3 +12093,4 @@
 [2026-09-07 15:11:22] ❌ Failed for mailtokj@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3339bdf26c5sm27360520eec.27 - gsmtp')
 [2026-09-07 15:11:53] ❌ Failed for anush.cherian@krossark.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14340a69666sm6293349c88.9 - gsmtp')
 [2026-09-07 15:12:23] 🔒 SMTP session closed.
+[2026-09-07 22:05:33] 🌙 Outside work hours (22:00). Skipping.
