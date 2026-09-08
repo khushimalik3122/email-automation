@@ -12114,3 +12114,4 @@
 [2026-09-08 14:36:09] ❌ Failed for payal@iksula.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-9397fb2fd82sm1087203585a.17 - gsmtp')
 [2026-09-08 14:36:39] ❌ Failed for cavery.mahajan@techolution.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-9104067b099sm112613156d6.28 - gsmtp')
 [2026-09-08 14:37:09] 🔒 SMTP session closed.
+[2026-09-08 20:43:14] 🌙 Outside work hours (20:00). Skipping.
