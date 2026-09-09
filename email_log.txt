@@ -12136,3 +12136,4 @@
 [2026-09-09 14:43:00] ❌ Failed for hrindia@ihs.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-910406b4d46sm139097206d6.45 - gsmtp')
 [2026-09-09 14:43:30] ❌ Failed for preeti.mathur@eproductivitysoftware.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d75a77b69052e-53054116b90sm134777211cf.9 - gsmtp')
 [2026-09-09 14:44:00] 🔒 SMTP session closed.
+[2026-09-09 20:43:14] 🌙 Outside work hours (20:00). Skipping.
