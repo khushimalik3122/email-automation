@@ -12159,3 +12159,4 @@
 [2026-09-10 14:42:20] ❌ Failed for kramachandran@hitachi-solutions.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-9397fb6e95csm1628032685a.31 - gsmtp')
 [2026-09-10 14:42:51] ❌ Failed for rohith.bhat@99games.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-9397fb93ea5sm1651223085a.34 - gsmtp')
 [2026-09-10 14:43:21] 🔒 SMTP session closed.
+[2026-09-10 20:34:48] 🌙 Outside work hours (20:00). Skipping.
