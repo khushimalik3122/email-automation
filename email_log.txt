@@ -12178,3 +12178,4 @@
 [2026-09-11 14:38:00] ❌ Failed for pkm@alcatel-lucent.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-939e80f89c8sm198706185a.44 - gsmtp')
 [2026-09-11 14:38:31] ❌ Failed for hiren@emiprotechnologies.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-939e80bbab7sm193700685a.34 - gsmtp')
 [2026-09-11 14:39:01] 🔒 SMTP session closed.
+[2026-09-11 20:38:04] 🌙 Outside work hours (20:00). Skipping.
