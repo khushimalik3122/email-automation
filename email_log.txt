@@ -12197,3 +12197,4 @@
 [2026-09-14 15:39:10] ❌ Failed for veenakumar@open-silicon.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 586e51a60fabf-47df90faa62sm8199575fac.12 - gsmtp')
 [2026-09-14 15:39:41] ❌ Failed for akumar@tslmarketing.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 006d021491bc7-6c0927adc48sm11068592eaf.0 - gsmtp')
 [2026-09-14 15:40:11] 🔒 SMTP session closed.
+[2026-09-14 22:30:03] 🌙 Outside work hours (22:00). Skipping.
