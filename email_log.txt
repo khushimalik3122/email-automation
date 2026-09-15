@@ -12219,3 +12219,4 @@
 [2026-09-15 15:12:25] ❌ Failed for vikasagarwal@xptsoftware.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 586e51a60fabf-47df96217e3sm11243068fac.15 - gsmtp')
 [2026-09-15 15:12:55] ❌ Failed for madhumita@civil.iitkgp.ac.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 46e09a7af769-80825a9b5fasm5311118a34.22 - gsmtp')
 [2026-09-15 15:13:25] 🔒 SMTP session closed.
+[2026-09-15 21:07:58] 🌙 Outside work hours (21:00). Skipping.
