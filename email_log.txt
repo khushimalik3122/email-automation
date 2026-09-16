@@ -12240,3 +12240,4 @@
 [2026-09-16 15:02:45] ❌ Failed for raja.pamidi@nttdata.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d75a77b69052e-532620dc734sm18063991cf.30 - gsmtp')
 [2026-09-16 15:03:16] ❌ Failed for gopalakrishna.gubbi@jsw.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-9123be946f0sm21067536d6.27 - gsmtp')
 [2026-09-16 15:03:46] 🔒 SMTP session closed.
+[2026-09-16 20:58:38] 🌙 Outside work hours (20:00). Skipping.
