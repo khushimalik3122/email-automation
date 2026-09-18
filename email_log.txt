@@ -12281,3 +12281,4 @@
 [2026-09-18 14:45:46] ❌ Failed for design@spikeindia.soft.net: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d75a77b69052e-532a18536c5sm9225331cf.3 - gsmtp')
 [2026-09-18 14:46:17] ❌ Failed for benson.mendez@microobjects.net: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-93be1620fdasm83707585a.43 - gsmtp')
 [2026-09-18 14:46:47] 🔒 SMTP session closed.
+[2026-09-18 20:34:25] 🌙 Outside work hours (20:00). Skipping.
