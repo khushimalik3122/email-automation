@@ -12302,3 +12302,4 @@
 [2026-09-21 15:45:28] ❌ Failed for dolphinagencies@hotmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-91260962b9fsm64516516d6.5 - gsmtp')
 [2026-09-21 15:45:58] ❌ Failed for greg@zoomcar.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d75a77b69052e-532ae511d1fsm59759701cf.3 - gsmtp')
 [2026-09-21 15:46:29] 🔒 SMTP session closed.
+[2026-09-21 22:38:28] 🌙 Outside work hours (22:00). Skipping.
