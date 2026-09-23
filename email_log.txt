@@ -12339,3 +12339,4 @@
 [2026-09-23 15:03:23] ❌ Failed for jogendra.rathore@smita-iitd.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2df6a5db266sm7678255ad.59 - gsmtp')
 [2026-09-23 15:03:53] ❌ Failed for victor@x3me.net: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-87d1dad3978sm951320b3a.34 - gsmtp')
 [2026-09-23 15:04:24] 🔒 SMTP session closed.
+[2026-09-23 21:00:31] 🌙 Outside work hours (21:00). Skipping.
