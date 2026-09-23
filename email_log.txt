@@ -12320,3 +12320,22 @@
 [2026-09-22 15:01:33] ❌ Failed for kevin@xeno.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-914023b40dbsm11455576d6.7 - gsmtp')
 [2026-09-22 15:02:04] ❌ Failed for tjacob@trueinfluence.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-914023b3350sm11467136d6.4 - gsmtp')
 [2026-09-22 15:02:34] 🔒 SMTP session closed.
+[2026-09-23 14:55:43] 🚀 Starting session. Batch size: 17
+[2026-09-23 14:55:44] ❌ Failed for sumukha@ta3s.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2df6a5d9265sm7728955ad.52 - gsmtp')
+[2026-09-23 14:56:14] ❌ Failed for ceo@bluetan.in: Connection unexpectedly closed
+[2026-09-23 14:56:45] ❌ Failed for sreenivasan@adsiduous.com: Connection unexpectedly closed
+[2026-09-23 14:57:16] ❌ Failed for kritika.sirohi@nlbtech.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-87d1dffd6ddsm940341b3a.48 - gsmtp')
+[2026-09-23 14:57:46] ❌ Failed for anupamadg@erevmax.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-87d1cfbfd11sm987845b3a.11 - gsmtp')
+[2026-09-23 14:58:17] ❌ Failed for amit.prayagi@claimgenius.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-87d1cfbbfd9sm989313b3a.17 - gsmtp')
+[2026-09-23 14:58:47] ❌ Failed for rupali.chide@tqiqeq.com: Connection unexpectedly closed
+[2026-09-23 14:59:18] ❌ Failed for recruitment.blr@dtdc.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-cc75f3f0915sm790232a12.21 - gsmtp')
+[2026-09-23 14:59:49] ❌ Failed for bobbsingh@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-87d1cfbf839sm996900b3a.13 - gsmtp')
+[2026-09-23 15:00:19] ❌ Failed for rakesh.arora@skilrock.com: Connection unexpectedly closed
+[2026-09-23 15:00:50] ❌ Failed for padmashree.alva@mresult.com: Connection unexpectedly closed
+[2026-09-23 15:01:20] ❌ Failed for archana.pareek@dhruvresearch.com: Connection unexpectedly closed
+[2026-09-23 15:01:51] ❌ Failed for vnambiyar@platinumpropertiesnyc.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-cc75f3b7240sm796641a12.7 - gsmtp')
+[2026-09-23 15:02:21] ❌ Failed for ankush.karwa@eshopbox.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-cc75f3b7240sm797265a12.7 - gsmtp')
+[2026-09-23 15:02:52] ❌ Failed for gaurav@jigsawacademy.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-cc75f3d6954sm767126a12.16 - gsmtp')
+[2026-09-23 15:03:23] ❌ Failed for jogendra.rathore@smita-iitd.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2df6a5db266sm7678255ad.59 - gsmtp')
+[2026-09-23 15:03:53] ❌ Failed for victor@x3me.net: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-87d1dad3978sm951320b3a.34 - gsmtp')
+[2026-09-23 15:04:24] 🔒 SMTP session closed.
