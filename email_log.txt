@@ -12381,3 +12381,4 @@
 [2026-09-25 15:20:43] ❌ Failed for prasannjeetsingh@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3414407ea69sm5450053eec.7 - gsmtp')
 [2026-09-25 15:21:15] ❌ Failed for career@techcronus.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-34144172de6sm8234347eec.9 - gsmtp')
 [2026-09-25 15:21:45] 🔒 SMTP session closed.
+[2026-09-25 21:22:29] 🌙 Outside work hours (21:00). Skipping.
