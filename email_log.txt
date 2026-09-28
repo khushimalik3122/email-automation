@@ -12382,3 +12382,20 @@
 [2026-09-25 15:21:15] ❌ Failed for career@techcronus.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-34144172de6sm8234347eec.9 - gsmtp')
 [2026-09-25 15:21:45] 🔒 SMTP session closed.
 [2026-09-25 21:22:29] 🌙 Outside work hours (21:00). Skipping.
+[2026-09-28 16:37:14] 🚀 Starting session. Batch size: 15
+[2026-09-28 16:37:14] ❌ Failed for arathi@suntecgroup.com: Connection unexpectedly closed
+[2026-09-28 16:37:45] ❌ Failed for sharmila@talentployer.com: Connection unexpectedly closed
+[2026-09-28 16:38:16] ❌ Failed for shruthi.j@sonata-software.com: Connection unexpectedly closed
+[2026-09-28 16:38:46] ❌ Failed for prakashk@newtglobalcorp.com: Connection unexpectedly closed
+[2026-09-28 16:39:17] ❌ Failed for biplob.das@izmoltd.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 586e51a60fabf-494877590e5sm6110858fac.13 - gsmtp')
+[2026-09-28 16:39:48] ❌ Failed for pradeep.unni@relianceada.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 586e51a60fabf-49347da3079sm8977542fac.14 - gsmtp')
+[2026-09-28 16:40:19] ❌ Failed for jitendra.wankhede@anuntatech.com: Connection unexpectedly closed
+[2026-09-28 16:40:50] ❌ Failed for nimeshcshah@yahoo.com: Connection unexpectedly closed
+[2026-09-28 16:41:20] ❌ Failed for neelima.vaka@minfytech.com: Connection unexpectedly closed
+[2026-09-28 16:41:51] ❌ Failed for saumya.singh@akalinfosys.com: Connection unexpectedly closed
+[2026-09-28 16:42:22] ❌ Failed for veena@zaportiv.com: Connection unexpectedly closed
+[2026-09-28 16:42:52] ❌ Failed for sandeep@healthplix.com: Connection unexpectedly closed
+[2026-09-28 16:43:23] ❌ Failed for aman.kh@zomato.com: Connection unexpectedly closed
+[2026-09-28 16:43:53] ❌ Failed for archan@arputer.com: Connection unexpectedly closed
+[2026-09-28 16:44:24] ❌ Failed for reshma.nagpal@e-bee.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 586e51a60fabf-4933094a74asm9375214fac.0 - gsmtp')
+[2026-09-28 16:44:54] 🔒 SMTP session closed.
