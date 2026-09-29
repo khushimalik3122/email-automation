@@ -12400,3 +12400,23 @@
 [2026-09-28 16:44:24] ❌ Failed for reshma.nagpal@e-bee.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 586e51a60fabf-4933094a74asm9375214fac.0 - gsmtp')
 [2026-09-28 16:44:54] 🔒 SMTP session closed.
 [2026-09-29 00:10:04] 🌙 Outside work hours (0:00). Skipping.
+[2026-09-29 16:19:38] 🚀 Starting session. Batch size: 18
+[2026-09-29 16:19:38] ❌ Failed for sridhar.n@qwikcilver.com: Connection unexpectedly closed
+[2026-09-29 16:20:09] ❌ Failed for hemraj@cloudthat.in: Connection unexpectedly closed
+[2026-09-29 16:20:39] ❌ Failed for yati.sharma@taggd.in: Connection unexpectedly closed
+[2026-09-29 16:21:10] ❌ Failed for shivangi.saini@genpact.com: Connection unexpectedly closed
+[2026-09-29 16:21:40] ❌ Failed for roshani.gupta@wipro.com: Connection unexpectedly closed
+[2026-09-29 16:22:11] ❌ Failed for nameeta.maskikar@verinon.com: Connection unexpectedly closed
+[2026-09-29 16:22:41] ❌ Failed for poornima.gowda@fortanix.com: Connection unexpectedly closed
+[2026-09-29 16:23:12] ❌ Failed for mandakini@victorsport.in: Connection unexpectedly closed
+[2026-09-29 16:23:42] ❌ Failed for vinok.sequeria@jda.com: Connection unexpectedly closed
+[2026-09-29 16:24:13] ❌ Failed for deepi.reddy@lancoglobal.com: Connection unexpectedly closed
+[2026-09-29 16:24:43] ❌ Failed for yashramola888@gmail.com: Connection unexpectedly closed
+[2026-09-29 16:25:14] ❌ Failed for graduate_fellowships@amat.com: Connection unexpectedly closed
+[2026-09-29 16:25:44] ❌ Failed for swati.jain.ext@siemens.com: Connection unexpectedly closed
+[2026-09-29 16:26:14] ❌ Failed for gaurav@sociosquares.com: Connection unexpectedly closed
+[2026-09-29 16:26:45] ❌ Failed for prajeeth.g@winwire.com: Connection unexpectedly closed
+[2026-09-29 16:27:16] ❌ Failed for varsha@inventureacademy.com: Connection unexpectedly closed
+[2026-09-29 16:27:46] ❌ Failed for surinderpal.kumar@gmail.com: Connection unexpectedly closed
+[2026-09-29 16:28:17] ❌ Failed for career@aktivsoftware.com: Connection unexpectedly closed
+[2026-09-29 16:28:47] 🔒 SMTP session closed.
