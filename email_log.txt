@@ -12420,3 +12420,4 @@
 [2026-09-29 16:27:46] ❌ Failed for surinderpal.kumar@gmail.com: Connection unexpectedly closed
 [2026-09-29 16:28:17] ❌ Failed for career@aktivsoftware.com: Connection unexpectedly closed
 [2026-09-29 16:28:47] 🔒 SMTP session closed.
+[2026-09-29 22:26:35] 🌙 Outside work hours (22:00). Skipping.
