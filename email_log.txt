@@ -12421,3 +12421,21 @@
 [2026-09-29 16:28:17] ❌ Failed for career@aktivsoftware.com: Connection unexpectedly closed
 [2026-09-29 16:28:47] 🔒 SMTP session closed.
 [2026-09-29 22:26:35] 🌙 Outside work hours (22:00). Skipping.
+[2026-09-30 16:07:29] 🚀 Starting session. Batch size: 16
+[2026-09-30 16:07:30] ❌ Failed for ta-india@duckercarlisle.com: Connection unexpectedly closed
+[2026-09-30 16:08:01] ❌ Failed for sanjeev.rana@crestechglobal.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2e2e5c1b3d7sm5058345ad.70 - gsmtp')
+[2026-09-30 16:08:31] ❌ Failed for sanjeev.rana@crestechsoftware.com: Connection unexpectedly closed
+[2026-09-30 16:09:02] ❌ Failed for shivaraman_g@onwardgroup.com: Connection unexpectedly closed
+[2026-09-30 16:09:33] ❌ Failed for saahil.goel@kartrocket.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2e2e5be5d55sm5112945ad.50 - gsmtp')
+[2026-09-30 16:10:04] ❌ Failed for unak@wisor.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-88726441713sm581770b3a.52 - gsmtp')
+[2026-09-30 16:10:34] ❌ Failed for joinus@ps.net: Connection unexpectedly closed
+[2026-09-30 16:11:05] ❌ Failed for santosh@securbay.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-88725d684f4sm588144b3a.42 - gsmtp')
+[2026-09-30 16:11:36] ❌ Failed for arun.ravi@ipsoft.com: Connection unexpectedly closed
+[2026-09-30 16:12:07] ❌ Failed for dubaijob@one.com: Connection unexpectedly closed
+[2026-09-30 16:12:37] ❌ Failed for freshers@inetframe.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-88725399d8bsm608357b3a.9 - gsmtp')
+[2026-09-30 16:13:08] ❌ Failed for hi@yourquote.in: Connection unexpectedly closed
+[2026-09-30 16:13:38] ❌ Failed for arun.kumar@wavicledata.com: Connection unexpectedly closed
+[2026-09-30 16:14:09] ❌ Failed for aditya@attify.com: Connection unexpectedly closed
+[2026-09-30 16:14:40] ❌ Failed for radvani@thegoldensource.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2e2e5bd471esm5163795ad.45 - gsmtp')
+[2026-09-30 16:15:11] ❌ Failed for dippy2602@yahoo.com: Connection unexpectedly closed
+[2026-09-30 16:15:41] 🔒 SMTP session closed.
