@@ -12440,3 +12440,20 @@
 [2026-09-30 16:15:11] ❌ Failed for dippy2602@yahoo.com: Connection unexpectedly closed
 [2026-09-30 16:15:41] 🔒 SMTP session closed.
 [2026-09-30 22:24:24] 🌙 Outside work hours (22:00). Skipping.
+[2026-10-01 16:35:25] 🚀 Starting session. Batch size: 15
+[2026-10-01 16:35:26] ❌ Failed for aakrit.vaish@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2e3003c611csm9462485ad.0 - gsmtp')
+[2026-10-01 16:35:56] ❌ Failed for rp@koove.com: Connection unexpectedly closed
+[2026-10-01 16:36:27] ❌ Failed for shahed@quadrantresource.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-88818eeb5f9sm910110b3a.30 - gsmtp')
+[2026-10-01 16:36:58] ❌ Failed for irecruitment@oracle.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-cc7e5462cefsm1228790a12.10 - gsmtp')
+[2026-10-01 16:37:28] ❌ Failed for kunal.acharya@impelsys.com: Connection unexpectedly closed
+[2026-10-01 16:37:59] ❌ Failed for ajay@trigma.com: Connection unexpectedly closed
+[2026-10-01 16:38:29] ❌ Failed for sushma.murthy@qwest.com: Connection unexpectedly closed
+[2026-10-01 16:39:00] ❌ Failed for anand@wedmegood.com: Connection unexpectedly closed
+[2026-10-01 16:39:30] ❌ Failed for debashishb@interrait.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2e30099c248sm9044325ad.28 - gsmtp')
+[2026-10-01 16:40:01] ❌ Failed for talent@satyam.com: Connection unexpectedly closed
+[2026-10-01 16:40:31] ❌ Failed for avinash@brandloomconsulting.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2e300b34c05sm9130315ad.63 - gsmtp')
+[2026-10-01 16:41:02] ❌ Failed for parneet.waraich@myrealdata.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2e300af5985sm9131355ad.43 - gsmtp')
+[2026-10-01 16:41:33] ❌ Failed for capgemini.commanuel.george@subexazure.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2e300af5985sm9136695ad.43 - gsmtp')
+[2026-10-01 16:42:03] ❌ Failed for hrcommunication@eggoz.in: Connection unexpectedly closed
+[2026-10-01 16:42:34] ❌ Failed for icare@induna.com: Connection unexpectedly closed
+[2026-10-01 16:43:04] 🔒 SMTP session closed.
