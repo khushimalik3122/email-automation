@@ -12457,3 +12457,4 @@
 [2026-10-01 16:42:03] ❌ Failed for hrcommunication@eggoz.in: Connection unexpectedly closed
 [2026-10-01 16:42:34] ❌ Failed for icare@induna.com: Connection unexpectedly closed
 [2026-10-01 16:43:04] 🔒 SMTP session closed.
+[2026-10-01 22:56:30] 🌙 Outside work hours (22:00). Skipping.
