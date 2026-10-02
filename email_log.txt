@@ -12458,3 +12458,22 @@
 [2026-10-01 16:42:34] ❌ Failed for icare@induna.com: Connection unexpectedly closed
 [2026-10-01 16:43:04] 🔒 SMTP session closed.
 [2026-10-01 22:56:30] 🌙 Outside work hours (22:00). Skipping.
+[2026-10-02 16:08:10] 🚀 Starting session. Batch size: 17
+[2026-10-02 16:08:11] ❌ Failed for shilpa.c@macgence.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14f4766f92fsm5458034c88.16 - gsmtp')
+[2026-10-02 16:08:42] ❌ Failed for talent@versatilecommerce.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14f4718b21dsm5543441c88.12 - gsmtp')
+[2026-10-02 16:09:13] ❌ Failed for srinivas.talampuranam@inspirage.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14f461defcbsm5844091c88.6 - gsmtp')
+[2026-10-02 16:09:44] ❌ Failed for malay@vyaparapp.in: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14f810bb13esm4556761c88.13 - gsmtp')
+[2026-10-02 16:10:15] ❌ Failed for mahasweta.paul@atyati.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14f47a57592sm5133560c88.17 - gsmtp')
+[2026-10-02 16:10:46] ❌ Failed for anjali.bose@incruiter.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-34f067301b5sm6204563eec.1 - gsmtp')
+[2026-10-02 16:11:17] ❌ Failed for muskan@coherentmarketinsights.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-34f14f652absm7224812eec.12 - gsmtp')
+[2026-10-02 16:11:48] ❌ Failed for tpochampally@hostanalytics.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14f4718b21dsm5570852c88.12 - gsmtp')
+[2026-10-02 16:12:19] ❌ Failed for sanika.arora@piri.ai: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-34f14ffda2dsm6368115eec.26 - gsmtp')
+[2026-10-02 16:12:50] ❌ Failed for kshama.patel@intech-systems.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-34f1500b59bsm5672753eec.28 - gsmtp')
+[2026-10-02 16:13:21] ❌ Failed for santosh@agilecrm.com: Connection unexpectedly closed
+[2026-10-02 16:13:52] ❌ Failed for rajs797979@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-34f14fcd065sm5019589eec.19 - gsmtp')
+[2026-10-02 16:14:23] ❌ Failed for kelindia@eth.net: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14f43eba13bsm6085175c88.2 - gsmtp')
+[2026-10-02 16:14:54] ❌ Failed for tdriver@tataunistore.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2e4ae0398aasm3322195ad.4 - gsmtp')
+[2026-10-02 16:15:25] ❌ Failed for payal@iksula.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14f43eba13bsm6094412c88.2 - gsmtp')
+[2026-10-02 16:15:56] ❌ Failed for priya1.sharma@infogain.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-34f14f2eb53sm5091033eec.7 - gsmtp')
+[2026-10-02 16:16:27] ❌ Failed for komala.t@acropetal.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14f45fedd43sm10637370c88.4 - gsmtp')
+[2026-10-02 16:16:57] 🔒 SMTP session closed.
