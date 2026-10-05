@@ -12478,3 +12478,21 @@
 [2026-10-02 16:16:27] ❌ Failed for komala.t@acropetal.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-14f45fedd43sm10637370c88.4 - gsmtp')
 [2026-10-02 16:16:57] 🔒 SMTP session closed.
 [2026-10-02 22:15:09] 🌙 Outside work hours (22:00). Skipping.
+[2026-10-05 17:13:19] 🚀 Starting session. Batch size: 16
+[2026-10-05 17:13:20] ❌ Failed for contactus@skilledx.in: Connection unexpectedly closed
+[2026-10-05 17:13:51] ❌ Failed for nameeta.maskikar@verinon.com: Connection unexpectedly closed
+[2026-10-05 17:14:21] ❌ Failed for sourik.s@frontizo.in: Connection unexpectedly closed
+[2026-10-05 17:14:51] ❌ Failed for sunayna@intentamplify.com: Connection unexpectedly closed
+[2026-10-05 17:15:22] ❌ Failed for ranusingh.hr@gmail.com: Connection unexpectedly closed
+[2026-10-05 17:15:52] ❌ Failed for sonam@insolutions.in: Connection unexpectedly closed
+[2026-10-05 17:16:23] ❌ Failed for abhay.agrawal@wishlink.com: Connection unexpectedly closed
+[2026-10-05 17:16:53] ❌ Failed for webhawks@gmail.com: Connection unexpectedly closed
+[2026-10-05 17:17:24] ❌ Failed for anshulabhang@gmail.com: Connection unexpectedly closed
+[2026-10-05 17:17:54] ❌ Failed for sunithas@affluentgs.com: Connection unexpectedly closed
+[2026-10-05 17:18:25] ❌ Failed for desamani@in.ibm.com: Connection unexpectedly closed
+[2026-10-05 17:18:55] ❌ Failed for anitha.prabhakar@pramati.com: Connection unexpectedly closed
+[2026-10-05 17:19:26] ❌ Failed for sushmita.aduri@teklink.com: Connection unexpectedly closed
+[2026-10-05 17:19:56] ❌ Failed for shivani.chaturvedi@mjunction.in: Connection unexpectedly closed
+[2026-10-05 17:20:27] ❌ Failed for pragya.pandey2@bankajob.com: Connection unexpectedly closed
+[2026-10-05 17:20:57] ❌ Failed for reddy.preeti@gmail.com: Connection unexpectedly closed
+[2026-10-05 17:21:27] 🔒 SMTP session closed.
