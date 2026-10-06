@@ -12517,3 +12517,4 @@
 [2026-10-06 17:03:47] ❌ Failed for sonia@klausit.com: Connection unexpectedly closed
 [2026-10-06 17:04:18] ❌ Failed for mananv@advensure.io: Connection unexpectedly closed
 [2026-10-06 17:04:48] 🔒 SMTP session closed.
+[2026-10-06 22:49:50] 🌙 Outside work hours (22:00). Skipping.
