@@ -12538,3 +12538,20 @@
 [2026-10-07 16:51:42] ❌ Failed for zenon.soans@ril.com: Connection unexpectedly closed
 [2026-10-07 16:52:12] 🔒 SMTP session closed.
 [2026-10-07 23:23:07] 🌙 Outside work hours (23:00). Skipping.
+[2026-10-08 17:01:06] 🚀 Starting session. Batch size: 15
+[2026-10-08 17:01:06] ❌ Failed for eradi.ramya@aujas.com: Connection unexpectedly closed
+[2026-10-08 17:01:37] ❌ Failed for mohit@thewebgen.com: Connection unexpectedly closed
+[2026-10-08 17:02:07] ❌ Failed for prathibha.msp@wipro.com: Connection unexpectedly closed
+[2026-10-08 17:02:38] ❌ Failed for gayatri.s@exonect.com: Connection unexpectedly closed
+[2026-10-08 17:03:08] ❌ Failed for saakshi.kashyap@grapesworldwide.com: Connection unexpectedly closed
+[2026-10-08 17:03:39] ❌ Failed for chandeler@gmail.com: Connection unexpectedly closed
+[2026-10-08 17:04:09] ❌ Failed for harsh@lendingkart.com: Connection unexpectedly closed
+[2026-10-08 17:04:40] ❌ Failed for harshil@razorpay.com: Connection unexpectedly closed
+[2026-10-08 17:05:10] ❌ Failed for khushboo@techspian.com: Connection unexpectedly closed
+[2026-10-08 17:05:41] ❌ Failed for pradeep_r@3dplmsoftware.com: Connection unexpectedly closed
+[2026-10-08 17:06:11] ❌ Failed for tapan@snaplion.com: Connection unexpectedly closed
+[2026-10-08 17:06:42] ❌ Failed for chaitanya@dsquarelabs.com: Connection unexpectedly closed
+[2026-10-08 17:07:12] ❌ Failed for sveta.shenoy@technoidentity.com: Connection unexpectedly closed
+[2026-10-08 17:07:43] ❌ Failed for vjohari@beusalons.com: Connection unexpectedly closed
+[2026-10-08 17:08:13] ❌ Failed for deepak@dixitindia.com: Connection unexpectedly closed
+[2026-10-08 17:08:43] 🔒 SMTP session closed.
