@@ -12555,3 +12555,23 @@
 [2026-10-08 17:07:43] ❌ Failed for vjohari@beusalons.com: Connection unexpectedly closed
 [2026-10-08 17:08:13] ❌ Failed for deepak@dixitindia.com: Connection unexpectedly closed
 [2026-10-08 17:08:43] 🔒 SMTP session closed.
+[2026-10-09 16:56:30] 🚀 Starting session. Batch size: 18
+[2026-10-09 16:56:30] ❌ Failed for satish@cybrilla.com: Connection unexpectedly closed
+[2026-10-09 16:57:00] ❌ Failed for sheetal@gameopedia.com: Connection unexpectedly closed
+[2026-10-09 16:57:30] ❌ Failed for varsha@consystentinfo.com: Connection unexpectedly closed
+[2026-10-09 16:58:01] ❌ Failed for prasad_k@abmindia.com: Connection unexpectedly closed
+[2026-10-09 16:58:32] ❌ Failed for calcutta_it@yahoogroups.com: Connection unexpectedly closed
+[2026-10-09 16:59:02] ❌ Failed for arjun.chatterjee@sunlife.com: Connection unexpectedly closed
+[2026-10-09 16:59:32] ❌ Failed for drishti@artoonsolutions.com: Connection unexpectedly closed
+[2026-10-09 17:00:03] ❌ Failed for varun.jain@insyghtanalytics.com: Connection unexpectedly closed
+[2026-10-09 17:00:34] ❌ Failed for indermohansinghk7@gmail.com: Connection unexpectedly closed
+[2026-10-09 17:01:04] ❌ Failed for adititiwari17@micamail.in: Connection unexpectedly closed
+[2026-10-09 17:01:34] ❌ Failed for arundathi.karanam@mgl.com: Connection unexpectedly closed
+[2026-10-09 17:02:05] ❌ Failed for lokesh.dhingra1@in.ey.com: Connection unexpectedly closed
+[2026-10-09 17:02:35] ❌ Failed for hina.r@genisysgroup.com: Connection unexpectedly closed
+[2026-10-09 17:03:05] ❌ Failed for hrd@informatica.co.in: Connection unexpectedly closed
+[2026-10-09 17:03:36] ❌ Failed for abhishek@wellthy.care: Connection unexpectedly closed
+[2026-10-09 17:04:06] ❌ Failed for shweta.g@kiesquare.com: Connection unexpectedly closed
+[2026-10-09 17:04:36] ❌ Failed for azzurasoft.comcareer@relianceidc.com: Connection unexpectedly closed
+[2026-10-09 17:05:07] ❌ Failed for vikrantkjain@gmail.com: Connection unexpectedly closed
+[2026-10-09 17:05:37] 🔒 SMTP session closed.
