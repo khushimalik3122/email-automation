@@ -12575,3 +12575,4 @@
 [2026-10-09 17:04:36] ❌ Failed for azzurasoft.comcareer@relianceidc.com: Connection unexpectedly closed
 [2026-10-09 17:05:07] ❌ Failed for vikrantkjain@gmail.com: Connection unexpectedly closed
 [2026-10-09 17:05:37] 🔒 SMTP session closed.
+[2026-10-09 23:00:24] 🌙 Outside work hours (23:00). Skipping.
