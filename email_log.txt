@@ -12576,3 +12576,22 @@
 [2026-10-09 17:05:07] ❌ Failed for vikrantkjain@gmail.com: Connection unexpectedly closed
 [2026-10-09 17:05:37] 🔒 SMTP session closed.
 [2026-10-09 23:00:24] 🌙 Outside work hours (23:00). Skipping.
+[2026-10-12 17:47:09] 🚀 Starting session. Batch size: 17
+[2026-10-12 17:47:09] ❌ Failed for nikhil.bhat@lipi.in: Connection unexpectedly closed
+[2026-10-12 17:47:41] ❌ Failed for dled@iitrpr.ac.in: Connection unexpectedly closed
+[2026-10-12 17:48:11] ❌ Failed for in@intint.in: Connection unexpectedly closed
+[2026-10-12 17:48:42] ❌ Failed for yogita.sharma@netsmartz.com: Connection unexpectedly closed
+[2026-10-12 17:49:12] ❌ Failed for reddy@mantratechno.com: Connection unexpectedly closed
+[2026-10-12 17:49:43] ❌ Failed for viji.g@ivtlinfoview.co.jp: Connection unexpectedly closed
+[2026-10-12 17:50:13] ❌ Failed for nagpur_careers@persistent.co.in: Connection unexpectedly closed
+[2026-10-12 17:50:43] ❌ Failed for mansi.b@netsol.co.in: Connection unexpectedly closed
+[2026-10-12 17:51:14] ❌ Failed for jpaul@securonix.com: Connection unexpectedly closed
+[2026-10-12 17:51:44] ❌ Failed for hiring@niyogin.ai: Connection unexpectedly closed
+[2026-10-12 17:52:15] ❌ Failed for gyan@centroxy.com: Connection unexpectedly closed
+[2026-10-12 17:52:45] ❌ Failed for cynthia@netcore.co.in: Connection unexpectedly closed
+[2026-10-12 17:53:15] ❌ Failed for lasanthoshrao@gmail.com: Connection unexpectedly closed
+[2026-10-12 17:53:46] ❌ Failed for sujitha.s@karyarth.com: Connection unexpectedly closed
+[2026-10-12 17:54:16] ❌ Failed for shweta.ughade@stplonline.com: Connection unexpectedly closed
+[2026-10-12 17:54:47] ❌ Failed for dushanthas@fernwoodporcelain.com: Connection unexpectedly closed
+[2026-10-12 17:55:17] ❌ Failed for sanket.jedhe@viraltech.in: Connection unexpectedly closed
+[2026-10-12 17:55:47] 🔒 SMTP session closed.
