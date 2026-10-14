@@ -12615,3 +12615,20 @@
 [2026-10-13 17:39:23] ❌ Failed for himanshu.kanodia@smartcoin.co.in: Connection unexpectedly closed
 [2026-10-13 17:39:53] ❌ Failed for shaiju.ck@scientiaindia.com: Connection unexpectedly closed
 [2026-10-13 17:40:23] 🔒 SMTP session closed.
+[2026-10-14 15:08:32] 🚀 Starting session. Batch size: 15
+[2026-10-14 15:08:34] ❌ Failed for chaudhary.pratima@orangemantra.in: Connection unexpectedly closed
+[2026-10-14 15:09:04] ❌ Failed for vijayr@zenithsoft.com: Connection unexpectedly closed
+[2026-10-14 15:09:35] ❌ Failed for satish.singh@ttwholdings.com: Connection unexpectedly closed
+[2026-10-14 15:10:06] ❌ Failed for bhanunamikaze@gmail.com: Connection unexpectedly closed
+[2026-10-14 15:10:36] ❌ Failed for shailendra@smsdaak.in: Connection unexpectedly closed
+[2026-10-14 15:11:07] ❌ Failed for sirish@giva.co: Connection unexpectedly closed
+[2026-10-14 15:11:37] ❌ Failed for naresh@countryclubmail.com: Connection unexpectedly closed
+[2026-10-14 15:12:08] ❌ Failed for a.rathore@thesynapses.com: Connection unexpectedly closed
+[2026-10-14 15:12:38] ❌ Failed for samar@jugnoo.in: Connection unexpectedly closed
+[2026-10-14 15:13:08] ❌ Failed for sriharsha@rmnit.com: Connection unexpectedly closed
+[2026-10-14 15:13:40] ❌ Failed for sneha.thakur@apptunix.com: Connection unexpectedly closed
+[2026-10-14 15:14:11] ❌ Failed for satisha@leangears.com: Connection unexpectedly closed
+[2026-10-14 15:14:41] ❌ Failed for manuel.george@subexazure.com: Connection unexpectedly closed
+[2026-10-14 15:15:11] ❌ Failed for parul@spyglassanalyticssoftware.com: Connection unexpectedly closed
+[2026-10-14 15:15:41] ❌ Failed for peyush.bansal@lenskart.com: Connection unexpectedly closed
+[2026-10-14 15:16:11] 🔒 SMTP session closed.
