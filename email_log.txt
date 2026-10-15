@@ -12651,3 +12651,4 @@
 [2026-10-15 14:54:07] ❌ Failed for hina.r@genisys-group.com: Connection unexpectedly closed
 [2026-10-15 14:54:37] ❌ Failed for apply@f13.tech: Connection unexpectedly closed
 [2026-10-15 14:55:08] 🔒 SMTP session closed.
+[2026-10-15 21:10:24] 🌙 Outside work hours (21:00). Skipping.
