@@ -12652,3 +12652,22 @@
 [2026-10-15 14:54:37] ❌ Failed for apply@f13.tech: Connection unexpectedly closed
 [2026-10-15 14:55:08] 🔒 SMTP session closed.
 [2026-10-15 21:10:24] 🌙 Outside work hours (21:00). Skipping.
+[2026-10-16 14:40:41] 🚀 Starting session. Batch size: 17
+[2026-10-16 14:40:41] ❌ Failed for sousthav@capitalquotient.com: Connection unexpectedly closed
+[2026-10-16 14:41:11] ❌ Failed for manasi.kelkar@cropin.com: Connection unexpectedly closed
+[2026-10-16 14:41:42] ❌ Failed for bhavana.sa@cgi.com: Connection unexpectedly closed
+[2026-10-16 14:42:12] ❌ Failed for vikass@interrait.com: Connection unexpectedly closed
+[2026-10-16 14:42:42] ❌ Failed for jigar.bhatt@navaantrix.com: Connection unexpectedly closed
+[2026-10-16 14:43:13] ❌ Failed for raghu@yellowmessenger.com: Connection unexpectedly closed
+[2026-10-16 14:43:43] ❌ Failed for venki.hr@mtouchlabs.com: Connection unexpectedly closed
+[2026-10-16 14:44:13] ❌ Failed for akshat@akshats.com: Connection unexpectedly closed
+[2026-10-16 14:44:44] ❌ Failed for itvsrec03@lucastvs.co.in: Connection unexpectedly closed
+[2026-10-16 14:45:14] ❌ Failed for praveen@vizexperts.com: Connection unexpectedly closed
+[2026-10-16 14:45:44] ❌ Failed for srini@ristaapps.com: Connection unexpectedly closed
+[2026-10-16 14:46:15] ❌ Failed for radhika.boppana@blackstraw.ai: Connection unexpectedly closed
+[2026-10-16 14:46:45] ❌ Failed for soumya.singh@programming.com: Connection unexpectedly closed
+[2026-10-16 14:47:15] ❌ Failed for riteshbpatel16@gmail.com: Connection unexpectedly closed
+[2026-10-16 14:47:46] ❌ Failed for amit@smargav.com: Connection unexpectedly closed
+[2026-10-16 14:48:16] ❌ Failed for vgupta@gmail.com: Connection unexpectedly closed
+[2026-10-16 14:48:46] ❌ Failed for vineet@flipclass.com: Connection unexpectedly closed
+[2026-10-16 14:49:16] 🔒 SMTP session closed.
