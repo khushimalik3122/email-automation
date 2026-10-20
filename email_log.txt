@@ -12692,3 +12692,20 @@
 [2026-10-19 15:45:50] ❌ Failed for singh.ayushi@zomato.com: Connection unexpectedly closed
 [2026-10-19 15:46:20] 🔒 SMTP session closed.
 [2026-10-19 23:08:22] 🌙 Outside work hours (23:00). Skipping.
+[2026-10-20 15:02:59] 🚀 Starting session. Batch size: 15
+[2026-10-20 15:03:00] ❌ Failed for career@vmhgroupsmr.com: Connection unexpectedly closed
+[2026-10-20 15:03:31] ❌ Failed for sarita.rathi@automationedge.com: Connection unexpectedly closed
+[2026-10-20 15:04:01] ❌ Failed for swati@sanisoft.com: Connection unexpectedly closed
+[2026-10-20 15:04:32] ❌ Failed for pratik@stepinsolutions.in: Connection unexpectedly closed
+[2026-10-20 15:05:02] ❌ Failed for mala.tg@niitmts.com: Connection unexpectedly closed
+[2026-10-20 15:05:33] ❌ Failed for amit.ranjan@scikey.ai: Connection unexpectedly closed
+[2026-10-20 15:06:03] ❌ Failed for bhavani.s@voonik.com: Connection unexpectedly closed
+[2026-10-20 15:06:34] ❌ Failed for satish.singh@ttwholdings.com: Connection unexpectedly closed
+[2026-10-20 15:07:04] ❌ Failed for hire@apnahr.co: Connection unexpectedly closed
+[2026-10-20 15:07:35] ❌ Failed for career@princeplastics.com: Connection unexpectedly closed
+[2026-10-20 15:08:06] ❌ Failed for mohit.s2@wheelseye.com: Connection unexpectedly closed
+[2026-10-20 15:08:36] ❌ Failed for nandy@ciborne.com: Connection unexpectedly closed
+[2026-10-20 15:09:07] ❌ Failed for aditya.chamoli@tothenew.com: Connection unexpectedly closed
+[2026-10-20 15:09:37] ❌ Failed for chinmoy.roy@catalyst-us.com: Connection unexpectedly closed
+[2026-10-20 15:10:08] ❌ Failed for anil.bhargava@zip.co: Connection unexpectedly closed
+[2026-10-20 15:10:38] 🔒 SMTP session closed.
