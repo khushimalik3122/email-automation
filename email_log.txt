@@ -12730,3 +12730,4 @@
 [2026-10-21 15:07:08] ❌ Failed for samiya@provittconsultants.com: Connection unexpectedly closed
 [2026-10-21 15:07:38] ❌ Failed for hiring@heylinspark.com: Connection unexpectedly closed
 [2026-10-21 15:08:08] 🔒 SMTP session closed.
+[2026-10-21 21:31:05] 🌙 Outside work hours (21:00). Skipping.
