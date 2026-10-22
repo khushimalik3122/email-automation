@@ -12752,3 +12752,4 @@
 [2026-10-22 15:10:45] ❌ Failed for deepali.pachouri@themotorpedia.com: Connection unexpectedly closed
 [2026-10-22 15:11:15] ❌ Failed for shraddhapal@rustomjee.com: Connection unexpectedly closed
 [2026-10-22 15:11:45] 🔒 SMTP session closed.
+[2026-10-22 21:26:40] 🌙 Outside work hours (21:00). Skipping.
