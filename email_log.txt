@@ -12731,3 +12731,24 @@
 [2026-10-21 15:07:38] ❌ Failed for hiring@heylinspark.com: Connection unexpectedly closed
 [2026-10-21 15:08:08] 🔒 SMTP session closed.
 [2026-10-21 21:31:05] 🌙 Outside work hours (21:00). Skipping.
+[2026-10-22 15:02:09] 🚀 Starting session. Batch size: 19
+[2026-10-22 15:02:09] ❌ Failed for chdjobs@qasource.com: Connection unexpectedly closed
+[2026-10-22 15:02:39] ❌ Failed for yaindrela.b@2coms.com: Connection unexpectedly closed
+[2026-10-22 15:03:10] ❌ Failed for sumitpmir@gmail.com: Connection unexpectedly closed
+[2026-10-22 15:03:40] ❌ Failed for nithin@zerodha.com: Connection unexpectedly closed
+[2026-10-22 15:04:10] ❌ Failed for mission@jumbotail.com: Connection unexpectedly closed
+[2026-10-22 15:04:41] ❌ Failed for varun@wbcomdesigns.com: Connection unexpectedly closed
+[2026-10-22 15:05:11] ❌ Failed for kalyani.mahajan@paramatrix.com: Connection unexpectedly closed
+[2026-10-22 15:05:41] ❌ Failed for sarath.v@insemitech.com: Connection unexpectedly closed
+[2026-10-22 15:06:12] ❌ Failed for harshalvnagare2001@gmail.com: Connection unexpectedly closed
+[2026-10-22 15:06:42] ❌ Failed for baljeet.baljeet@gmail.com: Connection unexpectedly closed
+[2026-10-22 15:07:12] ❌ Failed for tanvi.salpekar@maantic.com: Connection unexpectedly closed
+[2026-10-22 15:07:43] ❌ Failed for mamta.yadav@amantyatech.com: Connection unexpectedly closed
+[2026-10-22 15:08:13] ❌ Failed for amit.hcltech@gmail.com: Connection unexpectedly closed
+[2026-10-22 15:08:43] ❌ Failed for india-staffing@lsi.com: Connection unexpectedly closed
+[2026-10-22 15:09:14] ❌ Failed for recruitment_mic@mcafee.com: Connection unexpectedly closed
+[2026-10-22 15:09:44] ❌ Failed for himanshu@teknopoint.in: Connection unexpectedly closed
+[2026-10-22 15:10:14] ❌ Failed for pranay@freshdesk.com: Connection unexpectedly closed
+[2026-10-22 15:10:45] ❌ Failed for deepali.pachouri@themotorpedia.com: Connection unexpectedly closed
+[2026-10-22 15:11:15] ❌ Failed for shraddhapal@rustomjee.com: Connection unexpectedly closed
+[2026-10-22 15:11:45] 🔒 SMTP session closed.
