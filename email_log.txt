@@ -12753,3 +12753,22 @@
 [2026-10-22 15:11:15] ❌ Failed for shraddhapal@rustomjee.com: Connection unexpectedly closed
 [2026-10-22 15:11:45] 🔒 SMTP session closed.
 [2026-10-22 21:26:40] 🌙 Outside work hours (21:00). Skipping.
+[2026-10-23 14:58:00] 🚀 Starting session. Batch size: 17
+[2026-10-23 14:58:00] ❌ Failed for abey@goodbox.in: Connection unexpectedly closed
+[2026-10-23 14:58:31] ❌ Failed for shankar@learnyst.com: Connection unexpectedly closed
+[2026-10-23 14:59:01] ❌ Failed for rajeev.bhardwaj@sunlife.com: Connection unexpectedly closed
+[2026-10-23 14:59:32] ❌ Failed for balasubramaniam.atla@tcs.com: Connection unexpectedly closed
+[2026-10-23 15:00:02] ❌ Failed for bharath.lingam@xcubelabs.com: Connection unexpectedly closed
+[2026-10-23 15:00:33] ❌ Failed for anupriya.srivastava@starkflow.co: Connection unexpectedly closed
+[2026-10-23 15:01:03] ❌ Failed for joinus@ps.net: Connection unexpectedly closed
+[2026-10-23 15:01:34] ❌ Failed for rajesh@dremio.com: Connection unexpectedly closed
+[2026-10-23 15:02:05] ❌ Failed for pandurang@digived.com: Connection unexpectedly closed
+[2026-10-23 15:02:35] ❌ Failed for arif.memon@abzooba.com: Connection unexpectedly closed
+[2026-10-23 15:03:06] ❌ Failed for kunal@ezeiatech.com: Connection unexpectedly closed
+[2026-10-23 15:03:36] ❌ Failed for nishita.thapa@dreamsfinco.com: Connection unexpectedly closed
+[2026-10-23 15:04:07] ❌ Failed for gayathri.arunkumar@tvsnext.io: Connection unexpectedly closed
+[2026-10-23 15:04:37] ❌ Failed for harsha@mink7.com: Connection unexpectedly closed
+[2026-10-23 15:05:07] ❌ Failed for kishor.p@feuji.com: Connection unexpectedly closed
+[2026-10-23 15:05:38] ❌ Failed for zenon.soans@ril.com: Connection unexpectedly closed
+[2026-10-23 15:06:09] ❌ Failed for mokshajassal.wv@oyorooms.com: Connection unexpectedly closed
+[2026-10-23 15:06:39] 🔒 SMTP session closed.
