@@ -11,7 +11,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV_FILE = os.path.join(BASE_DIR, 'Final_Verified_Domains.xlsx')
 SENT_FILE = os.path.join(BASE_DIR, 'sent_contacts.csv')
 LOG_FILE = os.path.join(BASE_DIR, 'email_log.txt')
-RESUME_FILE = os.path.join(BASE_DIR, 'Khushi(4).pdf')
+RESUME_FILE = os.path.join(BASE_DIR, 'KHUSHI_MALIK(2).pdf')
 
 # Recommended: Set these in your environment variables for security
 YOUR_EMAIL = os.environ.get('SENDER_EMAIL', 'khushimalik511263@gmail.com')
