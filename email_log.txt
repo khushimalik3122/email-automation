@@ -12777,3 +12777,4 @@
 [2026-10-26 23:00:44] 🌙 Outside work hours (23:00). Skipping.
 [2026-10-27 15:26:34] ❌ Error: Resume file /home/runner/work/email-automation/email-automation/KHUSHI_MALIK(2).pdf not found.
 [2026-10-27 22:16:20] 🌙 Outside work hours (22:00). Skipping.
+[2026-10-28 16:13:11] ❌ Error: Resume file /home/runner/work/email-automation/email-automation/KHUSHI_MALIK(2).pdf not found.
